@@ -7,21 +7,167 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF4E249C2239744A006BCFA4 /* zoo_tiles in Resources */ = {isa = PBXBuildFile; fileRef = CF4E249B2239744A006BCFA4 /* zoo_tiles */; };
+		CF4E24C822398145006BCFA4 /* Tiger_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24A022398145006BCFA4 /* Tiger_Trail.plist */; };
+		CF4E24C922398145006BCFA4 /* Hippo_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24A122398145006BCFA4 /* Hippo_Trail.plist */; };
+		CF4E24CA22398145006BCFA4 /* NorthernFrontier_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24A222398145006BCFA4 /* NorthernFrontier_Trail.plist */; };
+		CF4E24CB22398145006BCFA4 /* AsianLeopards_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24A322398145006BCFA4 /* AsianLeopards_Trail.plist */; };
+		CF4E24CC22398145006BCFA4 /* FernCanyon_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24A422398145006BCFA4 /* FernCanyon_Trail.plist */; };
+		CF4E24CD22398145006BCFA4 /* Monkey_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24A522398145006BCFA4 /* Monkey_Trail.plist */; };
+		CF4E24CE22398145006BCFA4 /* OwensAviary_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24A622398145006BCFA4 /* OwensAviary_Trail.plist */; };
+		CF4E24CF22398145006BCFA4 /* UrbanJungle_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24A722398145006BCFA4 /* UrbanJungle_Trail.plist */; };
+		CF4E24D022398145006BCFA4 /* Panda_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24A822398145006BCFA4 /* Panda_Trail.plist */; };
+		CF4E24D122398145006BCFA4 /* ChildrenZoo_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24A922398145006BCFA4 /* ChildrenZoo_Trail.plist */; };
+		CF4E24D222398145006BCFA4 /* TerraceLagoon_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24AA22398145006BCFA4 /* TerraceLagoon_Trail.plist */; };
+		CF4E24D322398145006BCFA4 /* ParkerAviary_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24AB22398145006BCFA4 /* ParkerAviary_Trail.plist */; };
+		CF4E24D422398145006BCFA4 /* ElephantOdyssey_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24AC22398145006BCFA4 /* ElephantOdyssey_Trail.plist */; };
+		CF4E24D522398145006BCFA4 /* AfricaRocks_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24AD22398145006BCFA4 /* AfricaRocks_Trail.plist */; };
+		CF4E24D622398145006BCFA4 /* SunBear_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24AE22398145006BCFA4 /* SunBear_Trail.plist */; };
+		CF4E24D722398145006BCFA4 /* Orangutan_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24AF22398145006BCFA4 /* Orangutan_Trail.plist */; };
+		CF4E24D822398145006BCFA4 /* AfricanWaterfall_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24B122398145006BCFA4 /* AfricanWaterfall_Trail.plist */; };
+		CF4E24D922398145006BCFA4 /* MonkeyHippoConnection_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24B222398145006BCFA4 /* MonkeyHippoConnection_Trail.plist */; };
+		CF4E24DA22398145006BCFA4 /* Connection_Gorilla_Monkey_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24B322398145006BCFA4 /* Connection_Gorilla_Monkey_Trail.plist */; };
+		CF4E24DB22398145006BCFA4 /* BusLoadingPath_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24B422398145006BCFA4 /* BusLoadingPath_Trail.plist */; };
+		CF4E24DC22398145006BCFA4 /* KoalaCenter_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24B522398145006BCFA4 /* KoalaCenter_Trail.plist */; };
+		CF4E24DD22398145006BCFA4 /* AlbertHippoConnection_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24B622398145006BCFA4 /* AlbertHippoConnection_Trail.plist */; };
+		CF4E24DE22398145006BCFA4 /* SouthofAlberts_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24B722398145006BCFA4 /* SouthofAlberts_Trail.plist */; };
+		CF4E24DF22398145006BCFA4 /* Tazmanian_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24B822398145006BCFA4 /* Tazmanian_Trail.plist */; };
+		CF4E24E022398145006BCFA4 /* Reptiles_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24B922398145006BCFA4 /* Reptiles_Trail.plist */; };
+		CF4E24E122398145006BCFA4 /* OwensFiller_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24BA22398145006BCFA4 /* OwensFiller_Trail.plist */; };
+		CF4E24E222398145006BCFA4 /* CenterStreet_IPS.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24BC22398145006BCFA4 /* CenterStreet_IPS.plist */; };
+		CF4E24E322398145006BCFA4 /* FrontStreet_IPS.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24BD22398145006BCFA4 /* FrontStreet_IPS.plist */; };
+		CF4E24E422398145006BCFA4 /* TreetopsWay_IPS.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24BE22398145006BCFA4 /* TreetopsWay_IPS.plist */; };
+		CF4E24E522398145006BCFA4 /* ParkWay_IPS.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24BF22398145006BCFA4 /* ParkWay_IPS.plist */; };
+		CF4E24E622398145006BCFA4 /* AviaryEscalator_Transport.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24C122398145006BCFA4 /* AviaryEscalator_Transport.plist */; };
+		CF4E24E722398145006BCFA4 /* Skyline_Transport.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24C222398145006BCFA4 /* Skyline_Transport.plist */; };
+		CF4E24E822398145006BCFA4 /* BashorBridge_Transport.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24C322398145006BCFA4 /* BashorBridge_Transport.plist */; };
+		CF4E24E922398145006BCFA4 /* ZooPlace_Road.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24C522398145006BCFA4 /* ZooPlace_Road.plist */; };
+		CF4E24EA22398145006BCFA4 /* ParkingLotGrid.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24C622398145006BCFA4 /* ParkingLotGrid.plist */; };
+		CF4E24EB22398145006BCFA4 /* ZooDrive_Road.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24C722398145006BCFA4 /* ZooDrive_Road.plist */; };
+		CF4E24ED2239821B006BCFA4 /* ParkingLotGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4E24EC2239821B006BCFA4 /* ParkingLotGrid.swift */; };
+		CF4E24EF223982E6006BCFA4 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4E24EE223982E6006BCFA4 /* Routes.swift */; };
+		CF4E24F1223986A6006BCFA4 /* ZooPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4E24F0223986A6006BCFA4 /* ZooPolyline.swift */; };
 		CFD465572236E4AC0073E3FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465562236E4AC0073E3FD /* AppDelegate.swift */; };
-		CFD465592236E4AC0073E3FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465582236E4AC0073E3FD /* ViewController.swift */; };
+		CFD465592236E4AC0073E3FD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465582236E4AC0073E3FD /* SearchViewController.swift */; };
 		CFD4655C2236E4AC0073E3FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD4655A2236E4AC0073E3FD /* Main.storyboard */; };
 		CFD4655E2236E4AF0073E3FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD4655D2236E4AF0073E3FD /* Assets.xcassets */; };
 		CFD465612236E4AF0073E3FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD4655F2236E4AF0073E3FD /* LaunchScreen.storyboard */; };
+		CFD4656A2236E4D10073E3FD /* Zoo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465692236E4D10073E3FD /* Zoo.swift */; };
+		CFD4656C2236E6760073E3FD /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4656B2236E6760073E3FD /* Animal.swift */; };
+		CFD4656E2236E68B0073E3FD /* ZooObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4656D2236E68B0073E3FD /* ZooObject.swift */; };
+		CFD465702236E6A80073E3FD /* Dining.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4656F2236E6A80073E3FD /* Dining.swift */; };
+		CFD465722236E7040073E3FD /* Restroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465712236E7040073E3FD /* Restroom.swift */; };
+		CFD465742236E79E0073E3FD /* WaterFountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465732236E79E0073E3FD /* WaterFountain.swift */; };
+		CFD465762236E8550073E3FD /* MapLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465752236E8550073E3FD /* MapLocation.swift */; };
+		CFD465782236E8E70073E3FD /* ParkingLotSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465772236E8E70073E3FD /* ParkingLotSign.swift */; };
+		CFD4657B2236E9460073E3FD /* AnimalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4657A2236E9460073E3FD /* AnimalData.swift */; };
+		CFD4657F2236F5530073E3FD /* ZooArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4657E2236F5530073E3FD /* ZooArea.swift */; };
+		CFD465812236F7830073E3FD /* DiningData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465802236F7830073E3FD /* DiningData.swift */; };
+		CFD465832236F8B60073E3FD /* RestroomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465822236F8B60073E3FD /* RestroomData.swift */; };
+		CFD465852236F9590073E3FD /* WaterFountainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465842236F9590073E3FD /* WaterFountainData.swift */; };
+		CFD465872236FA410073E3FD /* MapLocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465862236FA410073E3FD /* MapLocationData.swift */; };
+		CFD465892236FC3F0073E3FD /* ParkingLotSignData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465882236FC3F0073E3FD /* ParkingLotSignData.swift */; };
+		CFD4658C2236FD280073E3FD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4658B2236FD280073E3FD /* MapViewController.swift */; };
+		CFD4658E223703DF0073E3FD /* ObjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4658D223703DF0073E3FD /* ObjectDetailViewController.swift */; };
+		CFD46591223748960073E3FD /* ZooObjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD46590223748960073E3FD /* ZooObjectTableViewCell.swift */; };
+		CFD46593223801F30073E3FD /* IntermediateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD46592223801F30073E3FD /* IntermediateViewController.swift */; };
+		CFD4659522381F9B0073E3FD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4659422381F9B0073E3FD /* HomeViewController.swift */; };
+		CFD46597223825A20073E3FD /* ExperiencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD46596223825A20073E3FD /* ExperiencesViewController.swift */; };
+		CFD46599223826140073E3FD /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD46598223826140073E3FD /* Experience.swift */; };
+		CFD4659B223826650073E3FD /* ExperienceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4659A223826650073E3FD /* ExperienceType.swift */; };
+		CFD4659D223826E60073E3FD /* ExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4659C223826E60073E3FD /* ExperienceTableViewCell.swift */; };
+		CFD4659F2238285B0073E3FD /* ExperienceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4659E2238285B0073E3FD /* ExperienceData.swift */; };
+		CFD465A1223854B90073E3FD /* ExperienceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465A0223854B90073E3FD /* ExperienceDetailViewController.swift */; };
+		CFD465A32238CD5A0073E3FD /* MapViewZoomInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465A22238CD5A0073E3FD /* MapViewZoomInterceptor.swift */; };
+		CFD465A52238CD8A0073E3FD /* WildCardGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465A42238CD8A0073E3FD /* WildCardGestureRecognizer.swift */; };
+		CFD465A72238CE020073E3FD /* ZooOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465A62238CE020073E3FD /* ZooOverlay.swift */; };
+		CFD465A92238CE630073E3FD /* ConstantSizePolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465A82238CE630073E3FD /* ConstantSizePolyline.swift */; };
+		CFD465AB2238CEBF0073E3FD /* ZooAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465AA2238CEBF0073E3FD /* ZooAnnotationView.swift */; };
+		CFD465AD2238CEED0073E3FD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465AC2238CEED0073E3FD /* Colors.swift */; };
+		CFD465AF2238D05E0073E3FD /* ZooAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465AE2238D05E0073E3FD /* ZooAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF4E249B2239744A006BCFA4 /* zoo_tiles */ = {isa = PBXFileReference; lastKnownFileType = folder; name = zoo_tiles; path = ../zoo_tiles; sourceTree = "<group>"; };
+		CF4E24A022398145006BCFA4 /* Tiger_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tiger_Trail.plist; sourceTree = "<group>"; };
+		CF4E24A122398145006BCFA4 /* Hippo_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Hippo_Trail.plist; sourceTree = "<group>"; };
+		CF4E24A222398145006BCFA4 /* NorthernFrontier_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NorthernFrontier_Trail.plist; sourceTree = "<group>"; };
+		CF4E24A322398145006BCFA4 /* AsianLeopards_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AsianLeopards_Trail.plist; sourceTree = "<group>"; };
+		CF4E24A422398145006BCFA4 /* FernCanyon_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FernCanyon_Trail.plist; sourceTree = "<group>"; };
+		CF4E24A522398145006BCFA4 /* Monkey_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Monkey_Trail.plist; sourceTree = "<group>"; };
+		CF4E24A622398145006BCFA4 /* OwensAviary_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OwensAviary_Trail.plist; sourceTree = "<group>"; };
+		CF4E24A722398145006BCFA4 /* UrbanJungle_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UrbanJungle_Trail.plist; sourceTree = "<group>"; };
+		CF4E24A822398145006BCFA4 /* Panda_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Panda_Trail.plist; sourceTree = "<group>"; };
+		CF4E24A922398145006BCFA4 /* ChildrenZoo_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ChildrenZoo_Trail.plist; sourceTree = "<group>"; };
+		CF4E24AA22398145006BCFA4 /* TerraceLagoon_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TerraceLagoon_Trail.plist; sourceTree = "<group>"; };
+		CF4E24AB22398145006BCFA4 /* ParkerAviary_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ParkerAviary_Trail.plist; sourceTree = "<group>"; };
+		CF4E24AC22398145006BCFA4 /* ElephantOdyssey_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ElephantOdyssey_Trail.plist; sourceTree = "<group>"; };
+		CF4E24AD22398145006BCFA4 /* AfricaRocks_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AfricaRocks_Trail.plist; sourceTree = "<group>"; };
+		CF4E24AE22398145006BCFA4 /* SunBear_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SunBear_Trail.plist; sourceTree = "<group>"; };
+		CF4E24AF22398145006BCFA4 /* Orangutan_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Orangutan_Trail.plist; sourceTree = "<group>"; };
+		CF4E24B122398145006BCFA4 /* AfricanWaterfall_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AfricanWaterfall_Trail.plist; sourceTree = "<group>"; };
+		CF4E24B222398145006BCFA4 /* MonkeyHippoConnection_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MonkeyHippoConnection_Trail.plist; sourceTree = "<group>"; };
+		CF4E24B322398145006BCFA4 /* Connection_Gorilla_Monkey_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Connection_Gorilla_Monkey_Trail.plist; sourceTree = "<group>"; };
+		CF4E24B422398145006BCFA4 /* BusLoadingPath_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BusLoadingPath_Trail.plist; sourceTree = "<group>"; };
+		CF4E24B522398145006BCFA4 /* KoalaCenter_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KoalaCenter_Trail.plist; sourceTree = "<group>"; };
+		CF4E24B622398145006BCFA4 /* AlbertHippoConnection_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AlbertHippoConnection_Trail.plist; sourceTree = "<group>"; };
+		CF4E24B722398145006BCFA4 /* SouthofAlberts_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SouthofAlberts_Trail.plist; sourceTree = "<group>"; };
+		CF4E24B822398145006BCFA4 /* Tazmanian_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tazmanian_Trail.plist; sourceTree = "<group>"; };
+		CF4E24B922398145006BCFA4 /* Reptiles_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Reptiles_Trail.plist; sourceTree = "<group>"; };
+		CF4E24BA22398145006BCFA4 /* OwensFiller_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OwensFiller_Trail.plist; sourceTree = "<group>"; };
+		CF4E24BC22398145006BCFA4 /* CenterStreet_IPS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CenterStreet_IPS.plist; sourceTree = "<group>"; };
+		CF4E24BD22398145006BCFA4 /* FrontStreet_IPS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FrontStreet_IPS.plist; sourceTree = "<group>"; };
+		CF4E24BE22398145006BCFA4 /* TreetopsWay_IPS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TreetopsWay_IPS.plist; sourceTree = "<group>"; };
+		CF4E24BF22398145006BCFA4 /* ParkWay_IPS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ParkWay_IPS.plist; sourceTree = "<group>"; };
+		CF4E24C122398145006BCFA4 /* AviaryEscalator_Transport.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AviaryEscalator_Transport.plist; sourceTree = "<group>"; };
+		CF4E24C222398145006BCFA4 /* Skyline_Transport.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Skyline_Transport.plist; sourceTree = "<group>"; };
+		CF4E24C322398145006BCFA4 /* BashorBridge_Transport.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BashorBridge_Transport.plist; sourceTree = "<group>"; };
+		CF4E24C522398145006BCFA4 /* ZooPlace_Road.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZooPlace_Road.plist; sourceTree = "<group>"; };
+		CF4E24C622398145006BCFA4 /* ParkingLotGrid.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ParkingLotGrid.plist; sourceTree = "<group>"; };
+		CF4E24C722398145006BCFA4 /* ZooDrive_Road.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZooDrive_Road.plist; sourceTree = "<group>"; };
+		CF4E24EC2239821B006BCFA4 /* ParkingLotGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotGrid.swift; sourceTree = "<group>"; };
+		CF4E24EE223982E6006BCFA4 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		CF4E24F0223986A6006BCFA4 /* ZooPolyline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooPolyline.swift; sourceTree = "<group>"; };
 		CFD465532236E4AC0073E3FD /* SanDiegoZooSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanDiegoZooSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD465562236E4AC0073E3FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFD465582236E4AC0073E3FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFD465582236E4AC0073E3FD /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CFD4655B2236E4AC0073E3FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFD4655D2236E4AF0073E3FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFD465602236E4AF0073E3FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFD465622236E4AF0073E3FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD465692236E4D10073E3FD /* Zoo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zoo.swift; sourceTree = "<group>"; };
+		CFD4656B2236E6760073E3FD /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		CFD4656D2236E68B0073E3FD /* ZooObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooObject.swift; sourceTree = "<group>"; };
+		CFD4656F2236E6A80073E3FD /* Dining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dining.swift; sourceTree = "<group>"; };
+		CFD465712236E7040073E3FD /* Restroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restroom.swift; sourceTree = "<group>"; };
+		CFD465732236E79E0073E3FD /* WaterFountain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFountain.swift; sourceTree = "<group>"; };
+		CFD465752236E8550073E3FD /* MapLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocation.swift; sourceTree = "<group>"; };
+		CFD465772236E8E70073E3FD /* ParkingLotSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotSign.swift; sourceTree = "<group>"; };
+		CFD4657A2236E9460073E3FD /* AnimalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalData.swift; sourceTree = "<group>"; };
+		CFD4657E2236F5530073E3FD /* ZooArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooArea.swift; sourceTree = "<group>"; };
+		CFD465802236F7830073E3FD /* DiningData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningData.swift; sourceTree = "<group>"; };
+		CFD465822236F8B60073E3FD /* RestroomData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomData.swift; sourceTree = "<group>"; };
+		CFD465842236F9590073E3FD /* WaterFountainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFountainData.swift; sourceTree = "<group>"; };
+		CFD465862236FA410073E3FD /* MapLocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationData.swift; sourceTree = "<group>"; };
+		CFD465882236FC3F0073E3FD /* ParkingLotSignData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotSignData.swift; sourceTree = "<group>"; };
+		CFD4658B2236FD280073E3FD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CFD4658D223703DF0073E3FD /* ObjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetailViewController.swift; sourceTree = "<group>"; };
+		CFD46590223748960073E3FD /* ZooObjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooObjectTableViewCell.swift; sourceTree = "<group>"; };
+		CFD46592223801F30073E3FD /* IntermediateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediateViewController.swift; sourceTree = "<group>"; };
+		CFD4659422381F9B0073E3FD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CFD46596223825A20073E3FD /* ExperiencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesViewController.swift; sourceTree = "<group>"; };
+		CFD46598223826140073E3FD /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
+		CFD4659A223826650073E3FD /* ExperienceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceType.swift; sourceTree = "<group>"; };
+		CFD4659C223826E60073E3FD /* ExperienceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewCell.swift; sourceTree = "<group>"; };
+		CFD4659E2238285B0073E3FD /* ExperienceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceData.swift; sourceTree = "<group>"; };
+		CFD465A0223854B90073E3FD /* ExperienceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailViewController.swift; sourceTree = "<group>"; };
+		CFD465A22238CD5A0073E3FD /* MapViewZoomInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewZoomInterceptor.swift; sourceTree = "<group>"; };
+		CFD465A42238CD8A0073E3FD /* WildCardGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildCardGestureRecognizer.swift; sourceTree = "<group>"; };
+		CFD465A62238CE020073E3FD /* ZooOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooOverlay.swift; sourceTree = "<group>"; };
+		CFD465A82238CE630073E3FD /* ConstantSizePolyline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantSizePolyline.swift; sourceTree = "<group>"; };
+		CFD465AA2238CEBF0073E3FD /* ZooAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooAnnotationView.swift; sourceTree = "<group>"; };
+		CFD465AC2238CEED0073E3FD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CFD465AE2238D05E0073E3FD /* ZooAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,10 +181,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF4E249D22398145006BCFA4 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				CF4E24EE223982E6006BCFA4 /* Routes.swift */,
+				CF4E249E22398145006BCFA4 /* Trails */,
+				CF4E24BB22398145006BCFA4 /* In-Park Streets */,
+				CF4E24C022398145006BCFA4 /* Transport */,
+				CF4E24C422398145006BCFA4 /* Roads */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		CF4E249E22398145006BCFA4 /* Trails */ = {
+			isa = PBXGroup;
+			children = (
+				CF4E249F22398145006BCFA4 /* Main Trails */,
+				CF4E24B022398145006BCFA4 /* Unnamed Filler Trails */,
+			);
+			path = Trails;
+			sourceTree = "<group>";
+		};
+		CF4E249F22398145006BCFA4 /* Main Trails */ = {
+			isa = PBXGroup;
+			children = (
+				CF4E24A022398145006BCFA4 /* Tiger_Trail.plist */,
+				CF4E24A122398145006BCFA4 /* Hippo_Trail.plist */,
+				CF4E24A222398145006BCFA4 /* NorthernFrontier_Trail.plist */,
+				CF4E24A322398145006BCFA4 /* AsianLeopards_Trail.plist */,
+				CF4E24A422398145006BCFA4 /* FernCanyon_Trail.plist */,
+				CF4E24A522398145006BCFA4 /* Monkey_Trail.plist */,
+				CF4E24A622398145006BCFA4 /* OwensAviary_Trail.plist */,
+				CF4E24A722398145006BCFA4 /* UrbanJungle_Trail.plist */,
+				CF4E24A822398145006BCFA4 /* Panda_Trail.plist */,
+				CF4E24A922398145006BCFA4 /* ChildrenZoo_Trail.plist */,
+				CF4E24AA22398145006BCFA4 /* TerraceLagoon_Trail.plist */,
+				CF4E24AB22398145006BCFA4 /* ParkerAviary_Trail.plist */,
+				CF4E24AC22398145006BCFA4 /* ElephantOdyssey_Trail.plist */,
+				CF4E24AD22398145006BCFA4 /* AfricaRocks_Trail.plist */,
+				CF4E24AE22398145006BCFA4 /* SunBear_Trail.plist */,
+				CF4E24AF22398145006BCFA4 /* Orangutan_Trail.plist */,
+			);
+			path = "Main Trails";
+			sourceTree = "<group>";
+		};
+		CF4E24B022398145006BCFA4 /* Unnamed Filler Trails */ = {
+			isa = PBXGroup;
+			children = (
+				CF4E24B122398145006BCFA4 /* AfricanWaterfall_Trail.plist */,
+				CF4E24B222398145006BCFA4 /* MonkeyHippoConnection_Trail.plist */,
+				CF4E24B322398145006BCFA4 /* Connection_Gorilla_Monkey_Trail.plist */,
+				CF4E24B422398145006BCFA4 /* BusLoadingPath_Trail.plist */,
+				CF4E24B522398145006BCFA4 /* KoalaCenter_Trail.plist */,
+				CF4E24B622398145006BCFA4 /* AlbertHippoConnection_Trail.plist */,
+				CF4E24B722398145006BCFA4 /* SouthofAlberts_Trail.plist */,
+				CF4E24B822398145006BCFA4 /* Tazmanian_Trail.plist */,
+				CF4E24B922398145006BCFA4 /* Reptiles_Trail.plist */,
+				CF4E24BA22398145006BCFA4 /* OwensFiller_Trail.plist */,
+			);
+			path = "Unnamed Filler Trails";
+			sourceTree = "<group>";
+		};
+		CF4E24BB22398145006BCFA4 /* In-Park Streets */ = {
+			isa = PBXGroup;
+			children = (
+				CF4E24BC22398145006BCFA4 /* CenterStreet_IPS.plist */,
+				CF4E24BD22398145006BCFA4 /* FrontStreet_IPS.plist */,
+				CF4E24BE22398145006BCFA4 /* TreetopsWay_IPS.plist */,
+				CF4E24BF22398145006BCFA4 /* ParkWay_IPS.plist */,
+			);
+			path = "In-Park Streets";
+			sourceTree = "<group>";
+		};
+		CF4E24C022398145006BCFA4 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				CF4E24C122398145006BCFA4 /* AviaryEscalator_Transport.plist */,
+				CF4E24C222398145006BCFA4 /* Skyline_Transport.plist */,
+				CF4E24C322398145006BCFA4 /* BashorBridge_Transport.plist */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		CF4E24C422398145006BCFA4 /* Roads */ = {
+			isa = PBXGroup;
+			children = (
+				CF4E24C522398145006BCFA4 /* ZooPlace_Road.plist */,
+				CF4E24C622398145006BCFA4 /* ParkingLotGrid.plist */,
+				CF4E24C722398145006BCFA4 /* ZooDrive_Road.plist */,
+			);
+			path = Roads;
+			sourceTree = "<group>";
+		};
 		CFD4654A2236E4AC0073E3FD = {
 			isa = PBXGroup;
 			children = (
 				CFD465552236E4AC0073E3FD /* SanDiegoZooSample */,
+				CFD465682236E4BE0073E3FD /* Models */,
+				CFD4658F223748770073E3FD /* Views */,
+				CFD4658A2236FD0F0073E3FD /* Controllers */,
+				CFD465792236E9310073E3FD /* Resources */,
 				CFD465542236E4AC0073E3FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,13 +297,78 @@
 			isa = PBXGroup;
 			children = (
 				CFD465562236E4AC0073E3FD /* AppDelegate.swift */,
-				CFD465582236E4AC0073E3FD /* ViewController.swift */,
 				CFD4655A2236E4AC0073E3FD /* Main.storyboard */,
 				CFD4655D2236E4AF0073E3FD /* Assets.xcassets */,
+				CF4E249B2239744A006BCFA4 /* zoo_tiles */,
 				CFD4655F2236E4AF0073E3FD /* LaunchScreen.storyboard */,
 				CFD465622236E4AF0073E3FD /* Info.plist */,
 			);
 			path = SanDiegoZooSample;
+			sourceTree = "<group>";
+		};
+		CFD465682236E4BE0073E3FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CFD465692236E4D10073E3FD /* Zoo.swift */,
+				CFD4656D2236E68B0073E3FD /* ZooObject.swift */,
+				CFD4657E2236F5530073E3FD /* ZooArea.swift */,
+				CFD4656B2236E6760073E3FD /* Animal.swift */,
+				CFD4656F2236E6A80073E3FD /* Dining.swift */,
+				CFD465712236E7040073E3FD /* Restroom.swift */,
+				CFD465732236E79E0073E3FD /* WaterFountain.swift */,
+				CFD465752236E8550073E3FD /* MapLocation.swift */,
+				CFD465772236E8E70073E3FD /* ParkingLotSign.swift */,
+				CF4E24EC2239821B006BCFA4 /* ParkingLotGrid.swift */,
+				CFD46598223826140073E3FD /* Experience.swift */,
+				CFD4659A223826650073E3FD /* ExperienceType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CFD465792236E9310073E3FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CFD4657A2236E9460073E3FD /* AnimalData.swift */,
+				CFD465802236F7830073E3FD /* DiningData.swift */,
+				CFD465822236F8B60073E3FD /* RestroomData.swift */,
+				CFD465842236F9590073E3FD /* WaterFountainData.swift */,
+				CFD465862236FA410073E3FD /* MapLocationData.swift */,
+				CFD465882236FC3F0073E3FD /* ParkingLotSignData.swift */,
+				CFD4659E2238285B0073E3FD /* ExperienceData.swift */,
+				CFD465AC2238CEED0073E3FD /* Colors.swift */,
+				CF4E249D22398145006BCFA4 /* Routes */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CFD4658A2236FD0F0073E3FD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFD4658B2236FD280073E3FD /* MapViewController.swift */,
+				CFD465A22238CD5A0073E3FD /* MapViewZoomInterceptor.swift */,
+				CFD465A42238CD8A0073E3FD /* WildCardGestureRecognizer.swift */,
+				CFD46592223801F30073E3FD /* IntermediateViewController.swift */,
+				CFD4659422381F9B0073E3FD /* HomeViewController.swift */,
+				CFD46596223825A20073E3FD /* ExperiencesViewController.swift */,
+				CFD465A0223854B90073E3FD /* ExperienceDetailViewController.swift */,
+				CFD465582236E4AC0073E3FD /* SearchViewController.swift */,
+				CFD4658D223703DF0073E3FD /* ObjectDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CFD4658F223748770073E3FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFD46590223748960073E3FD /* ZooObjectTableViewCell.swift */,
+				CFD4659C223826E60073E3FD /* ExperienceTableViewCell.swift */,
+				CFD465A62238CE020073E3FD /* ZooOverlay.swift */,
+				CF4E24F0223986A6006BCFA4 /* ZooPolyline.swift */,
+				CFD465A82238CE630073E3FD /* ConstantSizePolyline.swift */,
+				CFD465AE2238D05E0073E3FD /* ZooAnnotation.swift */,
+				CFD465AA2238CEBF0073E3FD /* ZooAnnotationView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +429,46 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF4E24DD22398145006BCFA4 /* AlbertHippoConnection_Trail.plist in Resources */,
+				CF4E24D822398145006BCFA4 /* AfricanWaterfall_Trail.plist in Resources */,
+				CF4E24D522398145006BCFA4 /* AfricaRocks_Trail.plist in Resources */,
+				CF4E24E522398145006BCFA4 /* ParkWay_IPS.plist in Resources */,
+				CF4E24C822398145006BCFA4 /* Tiger_Trail.plist in Resources */,
+				CF4E24E622398145006BCFA4 /* AviaryEscalator_Transport.plist in Resources */,
+				CF4E24D222398145006BCFA4 /* TerraceLagoon_Trail.plist in Resources */,
+				CF4E24DB22398145006BCFA4 /* BusLoadingPath_Trail.plist in Resources */,
+				CF4E24E722398145006BCFA4 /* Skyline_Transport.plist in Resources */,
+				CF4E24CF22398145006BCFA4 /* UrbanJungle_Trail.plist in Resources */,
 				CFD465612236E4AF0073E3FD /* LaunchScreen.storyboard in Resources */,
+				CF4E24EA22398145006BCFA4 /* ParkingLotGrid.plist in Resources */,
+				CF4E24CE22398145006BCFA4 /* OwensAviary_Trail.plist in Resources */,
+				CF4E24CC22398145006BCFA4 /* FernCanyon_Trail.plist in Resources */,
+				CF4E24C922398145006BCFA4 /* Hippo_Trail.plist in Resources */,
+				CF4E24E022398145006BCFA4 /* Reptiles_Trail.plist in Resources */,
+				CF4E24D022398145006BCFA4 /* Panda_Trail.plist in Resources */,
+				CF4E249C2239744A006BCFA4 /* zoo_tiles in Resources */,
+				CF4E24DF22398145006BCFA4 /* Tazmanian_Trail.plist in Resources */,
+				CF4E24CB22398145006BCFA4 /* AsianLeopards_Trail.plist in Resources */,
+				CF4E24E822398145006BCFA4 /* BashorBridge_Transport.plist in Resources */,
+				CF4E24DE22398145006BCFA4 /* SouthofAlberts_Trail.plist in Resources */,
+				CF4E24E922398145006BCFA4 /* ZooPlace_Road.plist in Resources */,
+				CF4E24DA22398145006BCFA4 /* Connection_Gorilla_Monkey_Trail.plist in Resources */,
+				CF4E24DC22398145006BCFA4 /* KoalaCenter_Trail.plist in Resources */,
+				CF4E24CD22398145006BCFA4 /* Monkey_Trail.plist in Resources */,
+				CF4E24E222398145006BCFA4 /* CenterStreet_IPS.plist in Resources */,
+				CF4E24E422398145006BCFA4 /* TreetopsWay_IPS.plist in Resources */,
+				CF4E24EB22398145006BCFA4 /* ZooDrive_Road.plist in Resources */,
+				CF4E24E122398145006BCFA4 /* OwensFiller_Trail.plist in Resources */,
+				CF4E24D422398145006BCFA4 /* ElephantOdyssey_Trail.plist in Resources */,
+				CF4E24D722398145006BCFA4 /* Orangutan_Trail.plist in Resources */,
+				CF4E24D622398145006BCFA4 /* SunBear_Trail.plist in Resources */,
+				CF4E24CA22398145006BCFA4 /* NorthernFrontier_Trail.plist in Resources */,
+				CF4E24E322398145006BCFA4 /* FrontStreet_IPS.plist in Resources */,
 				CFD4655E2236E4AF0073E3FD /* Assets.xcassets in Resources */,
 				CFD4655C2236E4AC0073E3FD /* Main.storyboard in Resources */,
+				CF4E24D922398145006BCFA4 /* MonkeyHippoConnection_Trail.plist in Resources */,
+				CF4E24D322398145006BCFA4 /* ParkerAviary_Trail.plist in Resources */,
+				CF4E24D122398145006BCFA4 /* ChildrenZoo_Trail.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +479,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFD465592236E4AC0073E3FD /* ViewController.swift in Sources */,
+				CF4E24ED2239821B006BCFA4 /* ParkingLotGrid.swift in Sources */,
+				CFD46593223801F30073E3FD /* IntermediateViewController.swift in Sources */,
+				CFD465812236F7830073E3FD /* DiningData.swift in Sources */,
+				CFD46597223825A20073E3FD /* ExperiencesViewController.swift in Sources */,
+				CFD465AD2238CEED0073E3FD /* Colors.swift in Sources */,
+				CFD465A52238CD8A0073E3FD /* WildCardGestureRecognizer.swift in Sources */,
+				CF4E24F1223986A6006BCFA4 /* ZooPolyline.swift in Sources */,
+				CFD46599223826140073E3FD /* Experience.swift in Sources */,
+				CFD465A72238CE020073E3FD /* ZooOverlay.swift in Sources */,
+				CFD465A92238CE630073E3FD /* ConstantSizePolyline.swift in Sources */,
+				CFD465832236F8B60073E3FD /* RestroomData.swift in Sources */,
+				CFD4658E223703DF0073E3FD /* ObjectDetailViewController.swift in Sources */,
+				CFD465702236E6A80073E3FD /* Dining.swift in Sources */,
+				CFD465852236F9590073E3FD /* WaterFountainData.swift in Sources */,
+				CFD465AF2238D05E0073E3FD /* ZooAnnotation.swift in Sources */,
+				CFD4657F2236F5530073E3FD /* ZooArea.swift in Sources */,
+				CFD4659522381F9B0073E3FD /* HomeViewController.swift in Sources */,
+				CFD4657B2236E9460073E3FD /* AnimalData.swift in Sources */,
+				CFD465592236E4AC0073E3FD /* SearchViewController.swift in Sources */,
+				CF4E24EF223982E6006BCFA4 /* Routes.swift in Sources */,
+				CFD4659F2238285B0073E3FD /* ExperienceData.swift in Sources */,
+				CFD465A1223854B90073E3FD /* ExperienceDetailViewController.swift in Sources */,
+				CFD4656C2236E6760073E3FD /* Animal.swift in Sources */,
+				CFD46591223748960073E3FD /* ZooObjectTableViewCell.swift in Sources */,
+				CFD465782236E8E70073E3FD /* ParkingLotSign.swift in Sources */,
+				CFD465892236FC3F0073E3FD /* ParkingLotSignData.swift in Sources */,
+				CFD465AB2238CEBF0073E3FD /* ZooAnnotationView.swift in Sources */,
+				CFD465A32238CD5A0073E3FD /* MapViewZoomInterceptor.swift in Sources */,
+				CFD465872236FA410073E3FD /* MapLocationData.swift in Sources */,
+				CFD4659B223826650073E3FD /* ExperienceType.swift in Sources */,
+				CFD465722236E7040073E3FD /* Restroom.swift in Sources */,
+				CFD465762236E8550073E3FD /* MapLocation.swift in Sources */,
+				CFD4658C2236FD280073E3FD /* MapViewController.swift in Sources */,
 				CFD465572236E4AC0073E3FD /* AppDelegate.swift in Sources */,
+				CFD465742236E79E0073E3FD /* WaterFountain.swift in Sources */,
+				CFD4656A2236E4D10073E3FD /* Zoo.swift in Sources */,
+				CFD4656E2236E68B0073E3FD /* ZooObject.swift in Sources */,
+				CFD4659D223826E60073E3FD /* ExperienceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

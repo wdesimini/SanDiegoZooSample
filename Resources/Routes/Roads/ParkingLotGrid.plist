@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Column 1</key>
+	<dict>
+		<key>Row 1</key>
+		<array>
+			<string>{32.735628, -117.148614}</string>
+			<string>{32.735628, -117.147304}</string>
+		</array>
+		<key>Row 2</key>
+		<array>
+			<string>{32.735761, -117.148695}</string>
+			<string>{32.735761, -117.147304}</string>
+		</array>
+		<key>Row 3</key>
+		<array>
+			<string>{32.735905, -117.148770}</string>
+			<string>{32.735941, -117.147304}</string>
+		</array>
+		<key>Row 4</key>
+		<array>
+			<string>{32.736081, -117.148770}</string>
+			<string>{32.736090, -117.147304}</string>
+		</array>
+		<key>Row 5</key>
+		<array>
+			<string>{32.736229, -117.148770}</string>
+			<string>{32.736238, -117.147304}</string>
+		</array>
+		<key>Row 6</key>
+		<array>
+			<string>{32.736387, -117.148770}</string>
+			<string>{32.736396, -117.147304}</string>
+		</array>
+		<key>Row 7</key>
+		<array>
+			<string>{32.736532, -117.148770}</string>
+			<string>{32.736538, -117.147304}</string>
+		</array>
+		<key>Row 8</key>
+		<array>
+			<string>{32.736696, -117.148770}</string>
+			<string>{32.736696,-117.147304}</string>
+		</array>
+		<key>Row 9</key>
+		<array>
+			<string>{32.736835, -117.148839}</string>
+			<string>{32.736835,-117.147304}</string>
+		</array>
+		<key>Row 10</key>
+		<array>
+			<string>{32.736997, -117.148900}</string>
+			<string>{32.736997,-117.147310}</string>
+		</array>
+		<key>Row 11</key>
+		<array>
+			<string>{32.737126, -117.148890}</string>
+			<string>{32.737115,-117.147315}</string>
+		</array>
+		<key>Row 12</key>
+		<array>
+			<string>{32.737222, -117.148871}</string>
+			<string>{32.737222,-117.147320}</string>
+		</array>
+		<key>Row 13</key>
+		<array>
+			<string>{32.737375, -117.148856}</string>
+			<string>{32.737375,-117.147325}</string>
+		</array>
+		<key>Row 14</key>
+		<array>
+			<string>{32.737542, -117.148821}</string>
+			<string>{32.737542,-117.147330}</string>
+		</array>
+		<key>Row 15</key>
+		<array>
+			<string>{32.737682, -117.148797}</string>
+			<string>{32.737676,-117.147335}</string>
+		</array>
+		<key>Row 16</key>
+		<array>
+			<string>{32.737834, -117.148766}</string>
+			<string>{32.737816,-117.147340}</string>
+		</array>
+		<key>Row 17</key>
+		<array>
+			<string>{32.737963, -117.148745}</string>
+			<string>{32.737958,-117.147345}</string>
+		</array>
+		<key>Row 18</key>
+		<array>
+			<string>{32.738109, -117.148721}</string>
+			<string>{32.738103,-117.147350}</string>
+		</array>
+	</dict>
+	<key>Column 2</key>
+	<dict>
+		<key>Row 1</key>
+		<array>
+			<string>{32.735642, -117.147298}</string>
+			<string>{32.735644, -117.146025}</string>
+		</array>
+		<key>Row 2</key>
+		<array>
+			<string>{32.735786, -117.147298}</string>
+			<string>{32.735793, -117.146021}</string>
+		</array>
+		<key>Row 3</key>
+		<array>
+			<string>{,-117.147298}</string>
+			<string>{}</string>
+		</array>
+		<key>Row 4</key>
+		<array>
+			<string>{32.736057,-117.147298}</string>
+			<string>{32.736079, -117.146010}</string>
+		</array>
+		<key>Row 5</key>
+		<array>
+			<string>{32.736204,-117.147298}</string>
+			<string>{32.736221, -117.146013}</string>
+		</array>
+		<key>Row 6</key>
+		<array>
+			<string>{32.736351,-117.147298}</string>
+			<string>{32.736356, -117.146016}</string>
+		</array>
+		<key>Row 7</key>
+		<array>
+			<string>{32.736491,-117.147298}</string>
+			<string>{32.736507, -117.146016}</string>
+		</array>
+		<key>Row 8</key>
+		<array>
+			<string>{32.736635,-117.147298}</string>
+			<string>{32.736645, -117.146036}</string>
+		</array>
+		<key>Row 9</key>
+		<array>
+			<string>{32.736784,-117.147298}</string>
+			<string>{32.736791, -117.146059}</string>
+		</array>
+		<key>Row 10</key>
+		<array>
+			<string>{32.736926,-117.147298}</string>
+			<string>{32.736933, -117.146076}</string>
+		</array>
+		<key>Row 11</key>
+		<array>
+			<string>{32.737055,-117.147298}</string>
+			<string>{32.737076, -117.146115}</string>
+		</array>
+		<key>Row 12</key>
+		<array>
+			<string>{32.737221,-117.147330}</string>
+			<string>{32.737224, -117.146149}</string>
+		</array>
+		<key>Row 13</key>
+		<array>
+			<string>{32.737345,-117.147330}</string>
+			<string>{32.737359, -117.146183}</string>
+		</array>
+		<key>Row 14</key>
+		<array>
+			<string>{32.737494,-117.147335}</string>
+			<string>{32.737511, -117.146229}</string>
+		</array>
+		<key>Row 15</key>
+		<array>
+			<string>{32.737628,-117.147335}</string>
+			<string>{32.737649, -117.146275}</string>
+		</array>
+		<key>Row 16</key>
+		<array>
+			<string>{32.737780,-117.147340}</string>
+			<string>{32.737791, -117.146326}</string>
+		</array>
+		<key>Row 17</key>
+		<array>
+			<string>{32.737911,-117.147340}</string>
+			<string>{32.737933, -117.146381}</string>
+		</array>
+		<key>Row 18</key>
+		<array>
+			<string>{32.738071,-117.147340}</string>
+			<string>{32.738074, -117.146444}</string>
+		</array>
+	</dict>
+</dict>
+</plist>
