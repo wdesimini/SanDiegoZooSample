@@ -65,6 +65,8 @@
 		CF4E24ED2239821B006BCFA4 /* ParkingLotGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4E24EC2239821B006BCFA4 /* ParkingLotGrid.swift */; };
 		CF4E24EF223982E6006BCFA4 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4E24EE223982E6006BCFA4 /* Routes.swift */; };
 		CF4E24F1223986A6006BCFA4 /* ZooPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4E24F0223986A6006BCFA4 /* ZooPolyline.swift */; };
+		CF7448C322416C1900C34E6B /* filterSearchObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7448C222416C1900C34E6B /* filterSearchObjects.swift */; };
+		CF7448C522418C8400C34E6B /* SearchTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7448C422418C8400C34E6B /* SearchTypeCollectionViewCell.swift */; };
 		CFD465572236E4AC0073E3FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465562236E4AC0073E3FD /* AppDelegate.swift */; };
 		CFD465592236E4AC0073E3FD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465582236E4AC0073E3FD /* SearchViewController.swift */; };
 		CFD4655C2236E4AC0073E3FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD4655A2236E4AC0073E3FD /* Main.storyboard */; };
@@ -167,6 +169,8 @@
 		CF4E24EC2239821B006BCFA4 /* ParkingLotGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotGrid.swift; sourceTree = "<group>"; };
 		CF4E24EE223982E6006BCFA4 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		CF4E24F0223986A6006BCFA4 /* ZooPolyline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooPolyline.swift; sourceTree = "<group>"; };
+		CF7448C222416C1900C34E6B /* filterSearchObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filterSearchObjects.swift; sourceTree = "<group>"; };
+		CF7448C422418C8400C34E6B /* SearchTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		CFD465532236E4AC0073E3FD /* SanDiegoZooSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanDiegoZooSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD465562236E4AC0073E3FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFD465582236E4AC0073E3FD /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -425,6 +429,7 @@
 				CFD46596223825A20073E3FD /* ExperiencesViewController.swift */,
 				CFD465A0223854B90073E3FD /* ExperienceDetailViewController.swift */,
 				CFD465582236E4AC0073E3FD /* SearchViewController.swift */,
+				CF7448C222416C1900C34E6B /* filterSearchObjects.swift */,
 				CFD4658D223703DF0073E3FD /* ObjectDetailViewController.swift */,
 				CF02A27D223FF60100F84F47 /* MenuViewController.swift */,
 			);
@@ -442,6 +447,7 @@
 				CFD465AE2238D05E0073E3FD /* ZooAnnotation.swift */,
 				CFD465AA2238CEBF0073E3FD /* ZooAnnotationView.swift */,
 				CF02A298224007C400F84F47 /* ZooAreaPickerView.swift */,
+				CF7448C422418C8400C34E6B /* SearchTypeCollectionViewCell.swift */,
 				CF02A29C2240226900F84F47 /* getZooAreaColor.swift */,
 				CFD8977B223C75570073FE49 /* Extensions.swift */,
 			);
@@ -634,6 +640,8 @@
 				CF4E24F1223986A6006BCFA4 /* ZooPolyline.swift in Sources */,
 				CFD46599223826140073E3FD /* Experience.swift in Sources */,
 				CFD465A72238CE020073E3FD /* ZooOverlay.swift in Sources */,
+				CF7448C522418C8400C34E6B /* SearchTypeCollectionViewCell.swift in Sources */,
+				CF7448C322416C1900C34E6B /* filterSearchObjects.swift in Sources */,
 				CFD465A92238CE630073E3FD /* ConstantSizePolyline.swift in Sources */,
 				CFD465832236F8B60073E3FD /* RestroomData.swift in Sources */,
 				CF02A299224007C400F84F47 /* ZooAreaPickerView.swift in Sources */,

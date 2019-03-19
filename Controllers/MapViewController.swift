@@ -244,11 +244,6 @@ class MapViewController: UIViewController {
     @IBAction func showButtonTapped(_ sender: Any) {
         mapShowing = !mapShowing
     }
-    
-    deinit {
-        print("map view controller deinit")
-    }
-    
 }
 
 extension MapViewController: MapViewZoomInterceptor {
