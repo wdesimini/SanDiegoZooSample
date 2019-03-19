@@ -8,11 +8,14 @@
 
 import UIKit
 import MapKit
+import DropDown
 
 class MapViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var areaFilterButton: UIButton!
+    @IBOutlet weak var showButton: UIBarButtonItem!
     
     let zoo = Zoo(name: "San Diego Zoo")
     
@@ -21,6 +24,29 @@ class MapViewController: UIViewController {
     var tileRenderer: MKTileOverlayRenderer!
     var zoomInterceptor: WildCardGestureRecognizer!
     
+    var currentObjects = [ZooObject]()
+    var areaFilter: ZooArea?
+    var typeFilter: ZooObjectType? {
+        didSet {
+            loadZooObjectData()
+            addAnnotations()
+            showAnnotationsOnMap()
+            tableView.reloadData()
+        }
+    }
+    
+    let typeFilterButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.frame.size = CGSize(width: 100, height: 44)
+        button.setTitle("type filter", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        
+        return button
+    }()
+    
+    let typeDropDown = DropDown()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,18 +54,38 @@ class MapViewController: UIViewController {
         setTileRenderer()
         setZoomGestureRecognizer()
         drawPolylines()
+        loadZooObjectData()
+        
+        let reuseId = MKMapViewDefaultAnnotationViewReuseIdentifier
+        mapView.register(ZooAnnotationView.self, forAnnotationViewWithReuseIdentifier: reuseId)
+        
         addAnnotations()
         showAnnotationsOnMap()
+        setTypeDropDown()
+        addNotificationObserver()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(true)
+    func addNotificationObserver() {
+        let selector = #selector(self.filterForSelectedArea(_:))
+        let name = NSNotification.Name(rawValue: "areaSelected")
         
-        // remove memory allocations on dismiss
-        zoomInterceptor = nil
-        mapView.gestureRecognizers = nil
-        mapView.removeAnnotations(mapView.annotations)
-        mapView.removeOverlays(mapView.overlays)
+        NotificationCenter.default.addObserver(self, selector: selector, name: name, object: nil)
+    }
+    
+    @IBAction func selectAreaFilterButtonTapped(_ sender: Any) {
+        let pickerController = UINavigationController(rootViewController: PickAreaViewController())
+        
+        pickerController.modalPresentationStyle = .overCurrentContext
+        
+        present(pickerController, animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "mapToObjectDetailSegue" {
+            let destVC = segue.destination as? ObjectDetailViewController
+            destVC?.object = sender as? ZooObject
+            destVC?.fromMap = true
+        }
     }
     
     func setInitialRegion() {
@@ -122,9 +168,9 @@ class MapViewController: UIViewController {
         }
     }
     
-    func addAnnotations() {
-        let reuseId = MKMapViewDefaultAnnotationViewReuseIdentifier
-        mapView.register(ZooAnnotationView.self, forAnnotationViewWithReuseIdentifier: reuseId)
+    func loadZooObjectData() {
+        // remove previous objects
+        currentObjects.removeAll()
         
         // object arrays
         let objectArrays: [[ZooObject]] = [
@@ -138,25 +184,71 @@ class MapViewController: UIViewController {
         
         for array in objectArrays {
             array.forEach {
-                let annotation = ZooAnnotation(object: $0)
-                zooAnnotations.append(annotation)
+                // add to objects list
+                currentObjects.append($0)
             }
+        }
+        
+        // filter objects if a filter exists
+        if (areaFilter != nil && areaFilter != .unknown) || (typeFilter != nil && typeFilter != .unknown) {
+            filterObjects()
+        }
+    }
+    
+    func addAnnotations() {
+        zooAnnotations.removeAll()
+        
+        currentObjects.forEach {
+            // add annotation to annotations list
+            let annotation = ZooAnnotation(object: $0)
+            zooAnnotations.append(annotation)
         }
     }
     
     func showAnnotationsOnMap() {
+        mapView.removeAnnotations(mapView.annotations)
+        
         zooAnnotations.forEach {
             mapView.addAnnotation($0)
         }
     }
     
     @IBAction func doneTapped(_ sender: Any) {
+        
+        // remove memory allocations on pop to main tab controller
+        zoomInterceptor = nil
+        mapView.gestureRecognizers = nil
+        mapView.removeAnnotations(mapView.annotations)
+        mapView.removeOverlays(mapView.overlays)
+        
+        // remove observer
+        NotificationCenter.default.removeObserver(self)
+        
+        // pop to tabBar controller
         dismiss(animated: true, completion: nil)
     }
     
-    deinit {
-        print("MapViewController deinit")
+    
+    var mapShowing: Bool = true {
+        didSet {
+            if mapShowing {
+                tableView.isHidden = true
+                showButton.title = "Show List"
+            } else {
+                tableView.isHidden = false
+                showButton.title = "Show Map"
+            }
+        }
     }
+    
+    @IBAction func showButtonTapped(_ sender: Any) {
+        mapShowing = !mapShowing
+    }
+    
+    deinit {
+        print("map view controller deinit")
+    }
+    
 }
 
 extension MapViewController: MapViewZoomInterceptor {
@@ -196,62 +288,36 @@ extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
                  calloutAccessoryControlTapped control: UIControl) {
         let annotation = view.annotation as? ZooAnnotation
-        performSegue(withIdentifier: "mapCallOutPresentSegue", sender: annotation)
+        let object = annotation?.object
+        
+        performSegue(withIdentifier: "mapToObjectDetailSegue", sender: object)
     }
     
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
-        
         restrictMapViewToRegion(mapView: mapView)
     }
 }
 
-// Restricts user from going outside of the mapView
-
-extension UIViewController {
+extension MapViewController: UITableViewDataSource, UITableViewDelegate {
     
-    func restrictMapViewToRegion(mapView: MKMapView) {
-        let northernBorder = 32.741152
-        let southernBorder = 32.731461
-        let easternBorder = -117.143622
-        let westernBorder = -117.157399
-        
-        var latitude  = mapView.region.center.latitude
-        var longitude = mapView.region.center.longitude
-        
-        if mapView.region.center.latitude > northernBorder {
-            latitude = northernBorder
-        }
-        
-        if mapView.region.center.latitude <  southernBorder {
-            latitude = southernBorder
-        }
-        
-        if mapView.region.center.longitude > easternBorder {
-            longitude = easternBorder
-        }
-        
-        if mapView.region.center.longitude < westernBorder {
-            longitude = westernBorder
-        }
-        
-        if (latitude != mapView.region.center.latitude || longitude != mapView.region.center.longitude)
-            || ((mapView.region.span.latitudeDelta > (northernBorder - southernBorder) )
-                || (mapView.region.span.longitudeDelta > (easternBorder - westernBorder))) {
-            var setSpan: MKCoordinateSpan
-            var center = CLLocationCoordinate2D()
-            center.latitude  = latitude
-            center.longitude = longitude
-            let span = MKCoordinateSpan.init(latitudeDelta: 0.007, longitudeDelta: 0.007)
-            
-            if mapView.region.span.latitudeDelta > span.latitudeDelta
-                || mapView.region.span.longitudeDelta > span.longitudeDelta {
-                setSpan = span
-            } else {
-                setSpan = mapView.region.span
-            }
-            
-            let resetRegion:MKCoordinateRegion = MKCoordinateRegion.init(center: center, span: setSpan)
-            mapView.setRegion(resetRegion, animated: true)
-        }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return currentObjects.count
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mapListCell") as! ZooObjectTableViewCell
+        
+        let object = currentObjects[indexPath.row]
+        
+        cell.setCellViews(object: object)
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let object = currentObjects[indexPath.row]
+        performSegue(withIdentifier: "mapToObjectDetailSegue", sender: object)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
 }

@@ -7,14 +7,15 @@
 //
 
 import Foundation
+import UIKit
 
 enum ZooArea: Int {
     case discoveryOutpost = 0, lostForest, northernFrontier, pandaCanyon, asianPassage, elephantOdyssey, africaRocks, urbanJungle, outback, parkingLot, unknown
 }
 
-// get zoo area name
-
 extension ZooArea {
+    
+    // get zoo area name
     func getAreaName() -> String {
         switch self {
         case .africaRocks:

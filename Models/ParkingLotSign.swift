@@ -19,7 +19,7 @@ class ParkingLotSign: ZooObject {
         
         let lotSignName = "Parking Lot Sign \(String(lotRow.getRowName())) \(String(column))"
         
-        super.init(name: lotSignName, coordinate: coordinate, areaPointer: 9, type: .mapLocation)
+        super.init(name: lotSignName, coordinate: coordinate, areaPointer: 9, type: .parkingLotSign)
     }
 }
 

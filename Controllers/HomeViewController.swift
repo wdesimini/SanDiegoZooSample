@@ -10,14 +10,29 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var experiencesView: UIView!
+    @IBOutlet weak var connectView: UIView!
+    @IBOutlet weak var ticketsView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let views = [experiencesView,
+                     connectView,
+                     ticketsView]
+        
+        views.forEach {
+            $0?.layer.cornerRadius = 10
+            $0?.clipsToBounds = true
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         navigationItem.title = "San Diego Zoo"
+    }
+    @IBAction func ticketsButtonTapped(_ sender: Any) {
+        openInBrowser("https://zoo.sandiegozoo.org/tickets")
     }
     
     @IBAction func facebookTapped(_ sender: Any) {

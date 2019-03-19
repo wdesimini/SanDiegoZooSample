@@ -55,9 +55,9 @@ class SearchViewController: UIViewController {
     }
     
     func setTableView() {
-//        self.tableView.layer.shouldRasterize = true
-//        self.tableView.layer.rasterizationScale = 2
-//        self.tableView.keyboardDismissMode = .onDrag
+//        tableView.layer.shouldRasterize = true
+//        tableView.layer.rasterizationScale = 2
+//        tableView.keyboardDismissMode = .onDrag
     }
 }
 

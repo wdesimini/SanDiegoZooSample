@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9216C9ED2980F1E71D509D8C /* Pods_SanDiegoZooSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461B71F0CFF5E12132B36F28 /* Pods_SanDiegoZooSample.framework */; };
+		CF02A27E223FF60100F84F47 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02A27D223FF60100F84F47 /* MenuViewController.swift */; };
+		CF02A28C223FF8ED00F84F47 /* Jungle Java_Menu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CF02A280223FF8ED00F84F47 /* Jungle Java_Menu.pdf */; };
+		CF02A28D223FF8ED00F84F47 /* Safari Kitchen Café_Menu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CF02A281223FF8ED00F84F47 /* Safari Kitchen Café_Menu.pdf */; };
+		CF02A28E223FF8ED00F84F47 /* Treetops Café_Menu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CF02A282223FF8ED00F84F47 /* Treetops Café_Menu.pdf */; };
+		CF02A28F223FF8ED00F84F47 /* Albert's Restaurant_Menu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CF02A283223FF8ED00F84F47 /* Albert's Restaurant_Menu.pdf */; };
+		CF02A290223FF8ED00F84F47 /* Sydney's Grill_Menu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CF02A284223FF8ED00F84F47 /* Sydney's Grill_Menu.pdf */; };
+		CF02A291223FF8ED00F84F47 /* Lagoon Terrace_Menu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CF02A285223FF8ED00F84F47 /* Lagoon Terrace_Menu.pdf */; };
+		CF02A292223FF8ED00F84F47 /* Hua Mei Café_Menu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CF02A286223FF8ED00F84F47 /* Hua Mei Café_Menu.pdf */; };
+		CF02A293223FF8ED00F84F47 /* Poppy's Patio_Menu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CF02A287223FF8ED00F84F47 /* Poppy's Patio_Menu.pdf */; };
+		CF02A294223FF8ED00F84F47 /* Sabertooth Grill_Menu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CF02A288223FF8ED00F84F47 /* Sabertooth Grill_Menu.pdf */; };
+		CF02A295223FF8ED00F84F47 /* Zoo Brew_Menu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CF02A289223FF8ED00F84F47 /* Zoo Brew_Menu.pdf */; };
+		CF02A296223FF8ED00F84F47 /* San Diego Zoo Sandwich Company_Menu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CF02A28A223FF8ED00F84F47 /* San Diego Zoo Sandwich Company_Menu.pdf */; };
+		CF02A297223FF8ED00F84F47 /* Front Street Café_Menu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CF02A28B223FF8ED00F84F47 /* Front Street Café_Menu.pdf */; };
+		CF02A299224007C400F84F47 /* ZooAreaPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02A298224007C400F84F47 /* ZooAreaPickerView.swift */; };
+		CF02A29B2240082000F84F47 /* PickAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02A29A2240082000F84F47 /* PickAreaViewController.swift */; };
+		CF02A29D2240226900F84F47 /* getZooAreaColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02A29C2240226900F84F47 /* getZooAreaColor.swift */; };
+		CF02A29F22403CB600F84F47 /* filterObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02A29E22403CB600F84F47 /* filterObjects.swift */; };
 		CF4E249C2239744A006BCFA4 /* zoo_tiles in Resources */ = {isa = PBXBuildFile; fileRef = CF4E249B2239744A006BCFA4 /* zoo_tiles */; };
 		CF4E24C822398145006BCFA4 /* Tiger_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24A022398145006BCFA4 /* Tiger_Trail.plist */; };
 		CF4E24C922398145006BCFA4 /* Hippo_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24A122398145006BCFA4 /* Hippo_Trail.plist */; };
@@ -70,7 +88,6 @@
 		CFD4658C2236FD280073E3FD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4658B2236FD280073E3FD /* MapViewController.swift */; };
 		CFD4658E223703DF0073E3FD /* ObjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4658D223703DF0073E3FD /* ObjectDetailViewController.swift */; };
 		CFD46591223748960073E3FD /* ZooObjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD46590223748960073E3FD /* ZooObjectTableViewCell.swift */; };
-		CFD46593223801F30073E3FD /* IntermediateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD46592223801F30073E3FD /* IntermediateViewController.swift */; };
 		CFD4659522381F9B0073E3FD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4659422381F9B0073E3FD /* HomeViewController.swift */; };
 		CFD46597223825A20073E3FD /* ExperiencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD46596223825A20073E3FD /* ExperiencesViewController.swift */; };
 		CFD46599223826140073E3FD /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD46598223826140073E3FD /* Experience.swift */; };
@@ -85,9 +102,31 @@
 		CFD465AB2238CEBF0073E3FD /* ZooAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465AA2238CEBF0073E3FD /* ZooAnnotationView.swift */; };
 		CFD465AD2238CEED0073E3FD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465AC2238CEED0073E3FD /* Colors.swift */; };
 		CFD465AF2238D05E0073E3FD /* ZooAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465AE2238D05E0073E3FD /* ZooAnnotation.swift */; };
+		CFD8977A223C22470073FE49 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD89779223C22470073FE49 /* CustomTabBarController.swift */; };
+		CFD8977C223C75570073FE49 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8977B223C75570073FE49 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		461B71F0CFF5E12132B36F28 /* Pods_SanDiegoZooSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SanDiegoZooSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B7C87643221633C737CDF12 /* Pods-SanDiegoZooSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SanDiegoZooSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SanDiegoZooSample/Pods-SanDiegoZooSample.release.xcconfig"; sourceTree = "<group>"; };
+		ADE7C0DB47DE47BEAB75300E /* Pods-SanDiegoZooSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SanDiegoZooSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SanDiegoZooSample/Pods-SanDiegoZooSample.debug.xcconfig"; sourceTree = "<group>"; };
+		CF02A27D223FF60100F84F47 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CF02A280223FF8ED00F84F47 /* Jungle Java_Menu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Jungle Java_Menu.pdf"; sourceTree = "<group>"; };
+		CF02A281223FF8ED00F84F47 /* Safari Kitchen Café_Menu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Safari Kitchen Café_Menu.pdf"; sourceTree = "<group>"; };
+		CF02A282223FF8ED00F84F47 /* Treetops Café_Menu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Treetops Café_Menu.pdf"; sourceTree = "<group>"; };
+		CF02A283223FF8ED00F84F47 /* Albert's Restaurant_Menu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Albert's Restaurant_Menu.pdf"; sourceTree = "<group>"; };
+		CF02A284223FF8ED00F84F47 /* Sydney's Grill_Menu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Sydney's Grill_Menu.pdf"; sourceTree = "<group>"; };
+		CF02A285223FF8ED00F84F47 /* Lagoon Terrace_Menu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Lagoon Terrace_Menu.pdf"; sourceTree = "<group>"; };
+		CF02A286223FF8ED00F84F47 /* Hua Mei Café_Menu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Hua Mei Café_Menu.pdf"; sourceTree = "<group>"; };
+		CF02A287223FF8ED00F84F47 /* Poppy's Patio_Menu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Poppy's Patio_Menu.pdf"; sourceTree = "<group>"; };
+		CF02A288223FF8ED00F84F47 /* Sabertooth Grill_Menu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Sabertooth Grill_Menu.pdf"; sourceTree = "<group>"; };
+		CF02A289223FF8ED00F84F47 /* Zoo Brew_Menu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Zoo Brew_Menu.pdf"; sourceTree = "<group>"; };
+		CF02A28A223FF8ED00F84F47 /* San Diego Zoo Sandwich Company_Menu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "San Diego Zoo Sandwich Company_Menu.pdf"; sourceTree = "<group>"; };
+		CF02A28B223FF8ED00F84F47 /* Front Street Café_Menu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Front Street Café_Menu.pdf"; sourceTree = "<group>"; };
+		CF02A298224007C400F84F47 /* ZooAreaPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooAreaPickerView.swift; sourceTree = "<group>"; };
+		CF02A29A2240082000F84F47 /* PickAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickAreaViewController.swift; sourceTree = "<group>"; };
+		CF02A29C2240226900F84F47 /* getZooAreaColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getZooAreaColor.swift; sourceTree = "<group>"; };
+		CF02A29E22403CB600F84F47 /* filterObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filterObjects.swift; sourceTree = "<group>"; };
 		CF4E249B2239744A006BCFA4 /* zoo_tiles */ = {isa = PBXFileReference; lastKnownFileType = folder; name = zoo_tiles; path = ../zoo_tiles; sourceTree = "<group>"; };
 		CF4E24A022398145006BCFA4 /* Tiger_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tiger_Trail.plist; sourceTree = "<group>"; };
 		CF4E24A122398145006BCFA4 /* Hippo_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Hippo_Trail.plist; sourceTree = "<group>"; };
@@ -153,7 +192,6 @@
 		CFD4658B2236FD280073E3FD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CFD4658D223703DF0073E3FD /* ObjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetailViewController.swift; sourceTree = "<group>"; };
 		CFD46590223748960073E3FD /* ZooObjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooObjectTableViewCell.swift; sourceTree = "<group>"; };
-		CFD46592223801F30073E3FD /* IntermediateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediateViewController.swift; sourceTree = "<group>"; };
 		CFD4659422381F9B0073E3FD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CFD46596223825A20073E3FD /* ExperiencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesViewController.swift; sourceTree = "<group>"; };
 		CFD46598223826140073E3FD /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
@@ -168,6 +206,8 @@
 		CFD465AA2238CEBF0073E3FD /* ZooAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooAnnotationView.swift; sourceTree = "<group>"; };
 		CFD465AC2238CEED0073E3FD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		CFD465AE2238D05E0073E3FD /* ZooAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooAnnotation.swift; sourceTree = "<group>"; };
+		CFD89779223C22470073FE49 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		CFD8977B223C75570073FE49 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,12 +215,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9216C9ED2980F1E71D509D8C /* Pods_SanDiegoZooSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61FBB032EB6A649A377CE4BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				461B71F0CFF5E12132B36F28 /* Pods_SanDiegoZooSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF02A27F223FF8ED00F84F47 /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				CF02A280223FF8ED00F84F47 /* Jungle Java_Menu.pdf */,
+				CF02A281223FF8ED00F84F47 /* Safari Kitchen Café_Menu.pdf */,
+				CF02A282223FF8ED00F84F47 /* Treetops Café_Menu.pdf */,
+				CF02A283223FF8ED00F84F47 /* Albert's Restaurant_Menu.pdf */,
+				CF02A284223FF8ED00F84F47 /* Sydney's Grill_Menu.pdf */,
+				CF02A285223FF8ED00F84F47 /* Lagoon Terrace_Menu.pdf */,
+				CF02A286223FF8ED00F84F47 /* Hua Mei Café_Menu.pdf */,
+				CF02A287223FF8ED00F84F47 /* Poppy's Patio_Menu.pdf */,
+				CF02A288223FF8ED00F84F47 /* Sabertooth Grill_Menu.pdf */,
+				CF02A289223FF8ED00F84F47 /* Zoo Brew_Menu.pdf */,
+				CF02A28A223FF8ED00F84F47 /* San Diego Zoo Sandwich Company_Menu.pdf */,
+				CF02A28B223FF8ED00F84F47 /* Front Street Café_Menu.pdf */,
+			);
+			path = Menus;
+			sourceTree = "<group>";
+		};
 		CF4E249D22398145006BCFA4 /* Routes */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +350,8 @@
 				CFD4658A2236FD0F0073E3FD /* Controllers */,
 				CFD465792236E9310073E3FD /* Resources */,
 				CFD465542236E4AC0073E3FD /* Products */,
+				EC7D10396197534A9B171375 /* Pods */,
+				61FBB032EB6A649A377CE4BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -336,6 +406,7 @@
 				CFD465882236FC3F0073E3FD /* ParkingLotSignData.swift */,
 				CFD4659E2238285B0073E3FD /* ExperienceData.swift */,
 				CFD465AC2238CEED0073E3FD /* Colors.swift */,
+				CF02A27F223FF8ED00F84F47 /* Menus */,
 				CF4E249D22398145006BCFA4 /* Routes */,
 			);
 			path = Resources;
@@ -344,15 +415,18 @@
 		CFD4658A2236FD0F0073E3FD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CFD89779223C22470073FE49 /* CustomTabBarController.swift */,
 				CFD4658B2236FD280073E3FD /* MapViewController.swift */,
+				CF02A29E22403CB600F84F47 /* filterObjects.swift */,
+				CF02A29A2240082000F84F47 /* PickAreaViewController.swift */,
 				CFD465A22238CD5A0073E3FD /* MapViewZoomInterceptor.swift */,
 				CFD465A42238CD8A0073E3FD /* WildCardGestureRecognizer.swift */,
-				CFD46592223801F30073E3FD /* IntermediateViewController.swift */,
 				CFD4659422381F9B0073E3FD /* HomeViewController.swift */,
 				CFD46596223825A20073E3FD /* ExperiencesViewController.swift */,
 				CFD465A0223854B90073E3FD /* ExperienceDetailViewController.swift */,
 				CFD465582236E4AC0073E3FD /* SearchViewController.swift */,
 				CFD4658D223703DF0073E3FD /* ObjectDetailViewController.swift */,
+				CF02A27D223FF60100F84F47 /* MenuViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -367,8 +441,20 @@
 				CFD465A82238CE630073E3FD /* ConstantSizePolyline.swift */,
 				CFD465AE2238D05E0073E3FD /* ZooAnnotation.swift */,
 				CFD465AA2238CEBF0073E3FD /* ZooAnnotationView.swift */,
+				CF02A298224007C400F84F47 /* ZooAreaPickerView.swift */,
+				CF02A29C2240226900F84F47 /* getZooAreaColor.swift */,
+				CFD8977B223C75570073FE49 /* Extensions.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		EC7D10396197534A9B171375 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADE7C0DB47DE47BEAB75300E /* Pods-SanDiegoZooSample.debug.xcconfig */,
+				6B7C87643221633C737CDF12 /* Pods-SanDiegoZooSample.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,9 +464,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFD465652236E4AF0073E3FD /* Build configuration list for PBXNativeTarget "SanDiegoZooSample" */;
 			buildPhases = (
+				5CFBB7D2E6A79A15E4E54BB9 /* [CP] Check Pods Manifest.lock */,
 				CFD4654F2236E4AC0073E3FD /* Sources */,
 				CFD465502236E4AC0073E3FD /* Frameworks */,
 				CFD465512236E4AC0073E3FD /* Resources */,
+				1E9D5CDBF01388CEBFB06CD2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -437,17 +525,24 @@
 				CF4E24E622398145006BCFA4 /* AviaryEscalator_Transport.plist in Resources */,
 				CF4E24D222398145006BCFA4 /* TerraceLagoon_Trail.plist in Resources */,
 				CF4E24DB22398145006BCFA4 /* BusLoadingPath_Trail.plist in Resources */,
+				CF02A296223FF8ED00F84F47 /* San Diego Zoo Sandwich Company_Menu.pdf in Resources */,
 				CF4E24E722398145006BCFA4 /* Skyline_Transport.plist in Resources */,
+				CF02A28D223FF8ED00F84F47 /* Safari Kitchen Café_Menu.pdf in Resources */,
+				CF02A297223FF8ED00F84F47 /* Front Street Café_Menu.pdf in Resources */,
 				CF4E24CF22398145006BCFA4 /* UrbanJungle_Trail.plist in Resources */,
+				CF02A28E223FF8ED00F84F47 /* Treetops Café_Menu.pdf in Resources */,
 				CFD465612236E4AF0073E3FD /* LaunchScreen.storyboard in Resources */,
 				CF4E24EA22398145006BCFA4 /* ParkingLotGrid.plist in Resources */,
+				CF02A294223FF8ED00F84F47 /* Sabertooth Grill_Menu.pdf in Resources */,
 				CF4E24CE22398145006BCFA4 /* OwensAviary_Trail.plist in Resources */,
 				CF4E24CC22398145006BCFA4 /* FernCanyon_Trail.plist in Resources */,
 				CF4E24C922398145006BCFA4 /* Hippo_Trail.plist in Resources */,
+				CF02A293223FF8ED00F84F47 /* Poppy's Patio_Menu.pdf in Resources */,
 				CF4E24E022398145006BCFA4 /* Reptiles_Trail.plist in Resources */,
 				CF4E24D022398145006BCFA4 /* Panda_Trail.plist in Resources */,
 				CF4E249C2239744A006BCFA4 /* zoo_tiles in Resources */,
 				CF4E24DF22398145006BCFA4 /* Tazmanian_Trail.plist in Resources */,
+				CF02A295223FF8ED00F84F47 /* Zoo Brew_Menu.pdf in Resources */,
 				CF4E24CB22398145006BCFA4 /* AsianLeopards_Trail.plist in Resources */,
 				CF4E24E822398145006BCFA4 /* BashorBridge_Transport.plist in Resources */,
 				CF4E24DE22398145006BCFA4 /* SouthofAlberts_Trail.plist in Resources */,
@@ -458,13 +553,18 @@
 				CF4E24E222398145006BCFA4 /* CenterStreet_IPS.plist in Resources */,
 				CF4E24E422398145006BCFA4 /* TreetopsWay_IPS.plist in Resources */,
 				CF4E24EB22398145006BCFA4 /* ZooDrive_Road.plist in Resources */,
+				CF02A290223FF8ED00F84F47 /* Sydney's Grill_Menu.pdf in Resources */,
 				CF4E24E122398145006BCFA4 /* OwensFiller_Trail.plist in Resources */,
+				CF02A291223FF8ED00F84F47 /* Lagoon Terrace_Menu.pdf in Resources */,
 				CF4E24D422398145006BCFA4 /* ElephantOdyssey_Trail.plist in Resources */,
 				CF4E24D722398145006BCFA4 /* Orangutan_Trail.plist in Resources */,
 				CF4E24D622398145006BCFA4 /* SunBear_Trail.plist in Resources */,
 				CF4E24CA22398145006BCFA4 /* NorthernFrontier_Trail.plist in Resources */,
 				CF4E24E322398145006BCFA4 /* FrontStreet_IPS.plist in Resources */,
+				CF02A28F223FF8ED00F84F47 /* Albert's Restaurant_Menu.pdf in Resources */,
+				CF02A292223FF8ED00F84F47 /* Hua Mei Café_Menu.pdf in Resources */,
 				CFD4655E2236E4AF0073E3FD /* Assets.xcassets in Resources */,
+				CF02A28C223FF8ED00F84F47 /* Jungle Java_Menu.pdf in Resources */,
 				CFD4655C2236E4AC0073E3FD /* Main.storyboard in Resources */,
 				CF4E24D922398145006BCFA4 /* MonkeyHippoConnection_Trail.plist in Resources */,
 				CF4E24D322398145006BCFA4 /* ParkerAviary_Trail.plist in Resources */,
@@ -474,13 +574,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E9D5CDBF01388CEBFB06CD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SanDiegoZooSample/Pods-SanDiegoZooSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SanDiegoZooSample/Pods-SanDiegoZooSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CFBB7D2E6A79A15E4E54BB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SanDiegoZooSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CFD4654F2236E4AC0073E3FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CF4E24ED2239821B006BCFA4 /* ParkingLotGrid.swift in Sources */,
-				CFD46593223801F30073E3FD /* IntermediateViewController.swift in Sources */,
 				CFD465812236F7830073E3FD /* DiningData.swift in Sources */,
 				CFD46597223825A20073E3FD /* ExperiencesViewController.swift in Sources */,
 				CFD465AD2238CEED0073E3FD /* Colors.swift in Sources */,
@@ -490,18 +636,22 @@
 				CFD465A72238CE020073E3FD /* ZooOverlay.swift in Sources */,
 				CFD465A92238CE630073E3FD /* ConstantSizePolyline.swift in Sources */,
 				CFD465832236F8B60073E3FD /* RestroomData.swift in Sources */,
+				CF02A299224007C400F84F47 /* ZooAreaPickerView.swift in Sources */,
 				CFD4658E223703DF0073E3FD /* ObjectDetailViewController.swift in Sources */,
 				CFD465702236E6A80073E3FD /* Dining.swift in Sources */,
 				CFD465852236F9590073E3FD /* WaterFountainData.swift in Sources */,
 				CFD465AF2238D05E0073E3FD /* ZooAnnotation.swift in Sources */,
 				CFD4657F2236F5530073E3FD /* ZooArea.swift in Sources */,
+				CF02A29D2240226900F84F47 /* getZooAreaColor.swift in Sources */,
 				CFD4659522381F9B0073E3FD /* HomeViewController.swift in Sources */,
 				CFD4657B2236E9460073E3FD /* AnimalData.swift in Sources */,
 				CFD465592236E4AC0073E3FD /* SearchViewController.swift in Sources */,
 				CF4E24EF223982E6006BCFA4 /* Routes.swift in Sources */,
 				CFD4659F2238285B0073E3FD /* ExperienceData.swift in Sources */,
 				CFD465A1223854B90073E3FD /* ExperienceDetailViewController.swift in Sources */,
+				CF02A29B2240082000F84F47 /* PickAreaViewController.swift in Sources */,
 				CFD4656C2236E6760073E3FD /* Animal.swift in Sources */,
+				CFD8977A223C22470073FE49 /* CustomTabBarController.swift in Sources */,
 				CFD46591223748960073E3FD /* ZooObjectTableViewCell.swift in Sources */,
 				CFD465782236E8E70073E3FD /* ParkingLotSign.swift in Sources */,
 				CFD465892236FC3F0073E3FD /* ParkingLotSignData.swift in Sources */,
@@ -510,13 +660,16 @@
 				CFD465872236FA410073E3FD /* MapLocationData.swift in Sources */,
 				CFD4659B223826650073E3FD /* ExperienceType.swift in Sources */,
 				CFD465722236E7040073E3FD /* Restroom.swift in Sources */,
+				CF02A27E223FF60100F84F47 /* MenuViewController.swift in Sources */,
 				CFD465762236E8550073E3FD /* MapLocation.swift in Sources */,
 				CFD4658C2236FD280073E3FD /* MapViewController.swift in Sources */,
 				CFD465572236E4AC0073E3FD /* AppDelegate.swift in Sources */,
+				CFD8977C223C75570073FE49 /* Extensions.swift in Sources */,
 				CFD465742236E79E0073E3FD /* WaterFountain.swift in Sources */,
 				CFD4656A2236E4D10073E3FD /* Zoo.swift in Sources */,
 				CFD4656E2236E68B0073E3FD /* ZooObject.swift in Sources */,
 				CFD4659D223826E60073E3FD /* ExperienceTableViewCell.swift in Sources */,
+				CF02A29F22403CB600F84F47 /* filterObjects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,11 +813,13 @@
 		};
 		CFD465662236E4AF0073E3FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE7C0DB47DE47BEAB75300E /* Pods-SanDiegoZooSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42UG54QP3B;
 				INFOPLIST_FILE = SanDiegoZooSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -678,11 +833,13 @@
 		};
 		CFD465672236E4AF0073E3FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B7C87643221633C737CDF12 /* Pods-SanDiegoZooSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42UG54QP3B;
 				INFOPLIST_FILE = SanDiegoZooSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

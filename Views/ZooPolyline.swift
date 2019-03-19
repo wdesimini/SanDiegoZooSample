@@ -10,16 +10,12 @@ import UIKit
 import MapKit
 
 class ZooPolyline: MKPolyline {
-    
     var lineType: ZooLineType!
-    
 }
 
 
 enum ZooLineType {
-    
     case ips, road, trail, transport, parkingLotRow
-    
 }
 
 // Polyline renderers

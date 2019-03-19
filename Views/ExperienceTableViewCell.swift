@@ -18,14 +18,4 @@ class ExperienceTableViewCell: UITableViewCell {
         experienceImageView.image = UIImage(named: "gator_thumbnail")!
         accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
     }
-//    
-//    func imageFromString(_ imageString: String?) -> UIImage {
-//        guard let string = imageString, let image = UIImage(named: string) else {
-//            
-//            return UIImage(named: "gator_thumbnail")! // know exists, unwrap
-//        }
-//        
-//        // had imageString and image from string exists
-//        return image
-//    }
 }

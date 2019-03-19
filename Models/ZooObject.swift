@@ -33,6 +33,6 @@ class ZooObject: NSObject {
     }
 }
 
-enum ZooObjectType {
+enum ZooObjectType: Int {
     case animal, dining, shopping, catering, aviary, mapLocation, parkingLotSign, general, waterFountain, restroom, unknown
 }

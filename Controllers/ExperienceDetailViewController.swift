@@ -13,8 +13,17 @@ class ExperienceDetailViewController: UIViewController {
     var experience: Experience!
     
     // views
-    let scrollView = UIScrollView()
-    let contentView = UIView()
+    let scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        return scrollView
+    }()
+    
+    let contentView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
     
     // imageView
     let experienceImageView: UIImageView = {
@@ -76,8 +85,6 @@ class ExperienceDetailViewController: UIViewController {
     }
     
     func setScrollView() {
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        contentView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(scrollView)
         scrollView.addSubview(contentView)
@@ -86,42 +93,37 @@ class ExperienceDetailViewController: UIViewController {
             scrollView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             scrollView.widthAnchor.constraint(equalTo: view.widthAnchor),
             scrollView.topAnchor.constraint(equalTo: view.topAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            
+            contentView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
+            contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            contentView.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor)
             ])
-        
-        contentView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
-        contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
-        contentView.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
-        contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
     }
     
     func addConstraints() {
-        // experience image
+        
         NSLayoutConstraint.activate([
+            // experience image
             experienceImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 80),
             experienceImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 60),
             experienceImageView.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -60),
-            experienceImageView.heightAnchor.constraint(equalToConstant: 120 )
-            ])
-        
-        // title
-        NSLayoutConstraint.activate([
+            experienceImageView.heightAnchor.constraint(equalToConstant: 120 ),
+            
+            // title
             titleLabel.widthAnchor.constraint(equalTo: contentView.widthAnchor, constant: -40),
             titleLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             titleLabel.heightAnchor.constraint(equalToConstant: 80),
-            titleLabel.topAnchor.constraint(equalTo: experienceImageView.bottomAnchor, constant: 20)
-            ])
-        
-        // tickets
-        NSLayoutConstraint.activate([
+            titleLabel.topAnchor.constraint(equalTo: experienceImageView.bottomAnchor, constant: 20),
+            
+            // tickets
             ticketsButton.widthAnchor.constraint(equalToConstant: 80),
             ticketsButton.heightAnchor.constraint(equalToConstant: 40),
             ticketsButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
-            ticketsButton.centerXAnchor.constraint(equalTo: contentView.centerXAnchor)
-            ])
-        
-        // description
-        NSLayoutConstraint.activate([
+            ticketsButton.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            
+            // description
             descriptionLabel.topAnchor.constraint(equalTo: ticketsButton.bottomAnchor, constant: 40),
             descriptionLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 20),
             descriptionLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -20),
@@ -130,7 +132,6 @@ class ExperienceDetailViewController: UIViewController {
         
         if experience.ticketsURL == nil {
             ticketsButton.removeFromSuperview()
-//            descriptionLabel.topAnchor.constraint(equalTo: ticketsButton.bottomAnchor, constant: 40).isActive = false
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 40).isActive = true
         }
     }
