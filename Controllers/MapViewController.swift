@@ -9,8 +9,9 @@
 import UIKit
 import MapKit
 import DropDown
+import CoreLocation
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var tableView: UITableView!
@@ -47,9 +48,13 @@ class MapViewController: UIViewController {
     
     let typeDropDown = DropDown()
     
+    var locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // request location
+        setLocationManager()
         setInitialRegion()
         setTileRenderer()
         setZoomGestureRecognizer()
@@ -65,12 +70,22 @@ class MapViewController: UIViewController {
         addNotificationObserver()
     }
     
-    func addNotificationObserver() {
-        let selector = #selector(self.filterForSelectedArea(_:))
-        let name = NSNotification.Name(rawValue: "areaSelected")
+    func setLocationManager() {
+        // Request user location
+        locationManager.requestWhenInUseAuthorization()
         
-        NotificationCenter.default.addObserver(self, selector: selector, name: name, object: nil)
+        guard CLLocationManager.locationServicesEnabled() else {
+            print("location isn't authorized yet")
+            return
+        }
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        locationManager.startUpdatingLocation()
+        
+        mapView.showsUserLocation = true
     }
+    
     
     @IBAction func selectAreaFilterButtonTapped(_ sender: Any) {
         let pickerController = UINavigationController(rootViewController: PickAreaViewController())
@@ -211,6 +226,13 @@ class MapViewController: UIViewController {
         zooAnnotations.forEach {
             mapView.addAnnotation($0)
         }
+    }
+    
+    func addNotificationObserver() {
+        let selector = #selector(self.filterForSelectedArea(_:))
+        let name = NSNotification.Name(rawValue: "areaSelected")
+        
+        NotificationCenter.default.addObserver(self, selector: selector, name: name, object: nil)
     }
     
     @IBAction func doneTapped(_ sender: Any) {
