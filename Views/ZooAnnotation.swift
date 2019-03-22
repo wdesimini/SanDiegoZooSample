@@ -9,7 +9,7 @@
 import MapKit
 
 class ZooAnnotation: NSObject, MKAnnotation {
-    unowned let object: ZooObject
+    let object: ZooObject
     
     init(object: ZooObject) {
         self.object = object

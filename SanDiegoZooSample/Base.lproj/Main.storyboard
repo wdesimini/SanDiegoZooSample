@@ -231,10 +231,45 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mMm-74-QXq"/>
                     </view>
+                    <connections>
+                        <segue destination="O9B-dD-2sS" kind="show" identifier="showObjectOnMapSegue" id="gXe-6s-z8Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGC-N1-Nk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2940" y="819"/>
+        </scene>
+        <!--Detail Map View Controller-->
+        <scene sceneID="Wog-8P-6li">
+            <objects>
+                <viewController id="O9B-dD-2sS" customClass="DetailMapViewController" customModule="SanDiegoZooSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nlV-3y-0x7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="30E-I0-gyL">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <connections>
+                                    <outlet property="delegate" destination="O9B-dD-2sS" id="6dY-rv-i7p"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qzv-s6-TTe" firstAttribute="bottom" secondItem="30E-I0-gyL" secondAttribute="bottom" id="9CV-Oz-bnk"/>
+                            <constraint firstItem="qzv-s6-TTe" firstAttribute="trailing" secondItem="30E-I0-gyL" secondAttribute="trailing" id="HBH-CY-bdM"/>
+                            <constraint firstItem="30E-I0-gyL" firstAttribute="leading" secondItem="qzv-s6-TTe" secondAttribute="leading" id="ieV-Kv-zC4"/>
+                            <constraint firstItem="30E-I0-gyL" firstAttribute="top" secondItem="qzv-s6-TTe" secondAttribute="top" id="jaL-uE-Ok7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qzv-s6-TTe"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="30E-I0-gyL" id="qK0-55-hiA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJ6-Jn-2jB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3851" y="821"/>
         </scene>
         <!--Custom Tab Bar Controller-->
         <scene sceneID="cMG-bO-0Wn">

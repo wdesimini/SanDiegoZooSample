@@ -10,16 +10,31 @@ import Foundation
 import CoreLocation
 
 
-struct ShoppingData {
-    
-    static let shoppingAreas: [Shopping] = {
-        [Shopping(name: "Panda Shop",
-                  coordinate: CLLocationCoordinate2DMake(32.735572, -117.151972),
-                  areaPointer: 4,
-                  summary: "All things panda—and MORE!")
-        ]
+class ShoppingData {
+    lazy var shoppingAreas: Array<ZooObject> = {
+        var shoppingList: [ZooObject] = []
+        let items = Zoo.plist("Shopping Areas") as! [[String: AnyObject]]
+        
+        for item in items {
+            
+            let name = item["name"] as! String
+            let coordinate = Zoo.parseCoord(dict: item, fieldName: "coordinate")
+            let imageString = item["imageString"] as? String
+            let pointer = item["area"] as! Int
+            let summary = item["summary"] as? String
+            
+            var object: ZooObject
+            
+            object = ZooObject(name: name,
+                               coordinate: coordinate,
+                               imageString: imageString,
+                               areaPointer: pointer,
+                               type: .shopping,
+                               summary: summary)
+            
+            shoppingList.append(object)
+        }
+        
+        return shoppingList
     }()
-    
-    
 }
-

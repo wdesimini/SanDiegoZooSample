@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>The Roar Store</string>
+		<key>coordinate</key>
+		<string>{32.735459, -117.149394}</string>
+		<key>area</key>
+		<integer>1</integer>
+		<key>summary</key>
+		<string>Everything you need to start your day! Hats, sunglasses, sunscreen, and so much more.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Sydney&apos;s Shoppe</string>
+		<key>coordinate</key>
+		<string>{32.737680, -117.149338}</string>
+		<key>area</key>
+		<integer>8</integer>
+		<key>summary</key>
+		<string>From the Land Down Under—exclusive koala and friends-themed gifts and souvenirs!</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Front Street Photos</string>
+		<key>coordinate</key>
+		<string>{32.735010, -117.149445}</string>
+		<key>area</key>
+		<integer>1</integer>
+		<key>summary</key>
+		<string>Visit our Front Street Photo location and pick up your souvenir photo, magnet, and CD!</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>San Diego Zoo Kids Store</string>
+		<key>coordinate</key>
+		<string>{32.734770, -117.149286}</string>
+		<key>area</key>
+		<integer>1</integer>
+		<key>summary</key>
+		<string>Gifts, snacks, sundries, fashion, hats, T-shirts, books, toys, plush animals, and more! ZAGAT RATED</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Zootique</string>
+		<key>coordinate</key>
+		<string>{32.734620, -117.149231}</string>
+		<key>area</key>
+		<integer>1</integer>
+		<key>summary</key>
+		<string>International gifts, unique handcrafted items from around the world, gourmet foods, fashion, hats, jewelry, and much more!</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Tusker&apos;s Trunk</string>
+		<key>coordinate</key>
+		<string>{32.738399, -117.152049}</string>
+		<key>area</key>
+		<integer>5</integer>
+		<key>summary</key>
+		<string>Elephant gifts by the trunkful!</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Panda Shop</string>
+		<key>coordinate</key>
+		<string>{32.735572, -117.151972}</string>
+		<key>area</key>
+		<integer>4</integer>
+		<key>summary</key>
+		<string>All Things Panda - and MORE!</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ituri Forest Outpost</string>
+		<key>coordinate</key>
+		<string>{32.733883, -117.152704}</string>
+		<key>area</key>
+		<integer>1</integer>
+		<key>summary</key>
+		<string>Fun and unusual items with an African theme.</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Arctic Trader</string>
+		<key>coordinate</key>
+		<string>{32.734220, -117.154863}</string>
+		<key>area</key>
+		<integer>2</integer>
+		<key>summary</key>
+		<string>“Cool” polar bear gifts and souvenirs!</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mercado</string>
+		<key>coordinate</key>
+		<string>{32.734361, -117.149514}</string>
+		<key>area</key>
+		<integer>0</integer>
+	</dict>
+</array>
+</plist>

@@ -25,13 +25,12 @@
 		CF02A29B2240082000F84F47 /* PickAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02A29A2240082000F84F47 /* PickAreaViewController.swift */; };
 		CF02A29D2240226900F84F47 /* getZooAreaColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02A29C2240226900F84F47 /* getZooAreaColor.swift */; };
 		CF02A29F22403CB600F84F47 /* filterObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02A29E22403CB600F84F47 /* filterObjects.swift */; };
-		CF0394532244AD5400FA8C5A /* Catering.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0394522244AD5400FA8C5A /* Catering.swift */; };
 		CF0394552244AEF500FA8C5A /* CateringData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0394542244AEF500FA8C5A /* CateringData.swift */; };
-		CF0394572244B0B000FA8C5A /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0394562244B0B000FA8C5A /* Shopping.swift */; };
 		CF0394592244B13600FA8C5A /* ShoppingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0394582244B13600FA8C5A /* ShoppingData.swift */; };
-		CF03945B2244B32000FA8C5A /* Aviary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03945A2244B32000FA8C5A /* Aviary.swift */; };
 		CF03945D2244B40000FA8C5A /* AviaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03945C2244B40000FA8C5A /* AviaryData.swift */; };
 		CF03945F2244B66D00FA8C5A /* GeneralData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03945E2244B66D00FA8C5A /* GeneralData.swift */; };
+		CF039461224542FC00FA8C5A /* Shopping Areas.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF039460224542FC00FA8C5A /* Shopping Areas.plist */; };
+		CF039464224556B200FA8C5A /* DetailMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF039463224556B200FA8C5A /* DetailMapViewController.swift */; };
 		CF4E249C2239744A006BCFA4 /* zoo_tiles in Resources */ = {isa = PBXBuildFile; fileRef = CF4E249B2239744A006BCFA4 /* zoo_tiles */; };
 		CF4E24C822398145006BCFA4 /* Tiger_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24A022398145006BCFA4 /* Tiger_Trail.plist */; };
 		CF4E24C922398145006BCFA4 /* Hippo_Trail.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4E24A122398145006BCFA4 /* Hippo_Trail.plist */; };
@@ -135,13 +134,12 @@
 		CF02A29A2240082000F84F47 /* PickAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickAreaViewController.swift; sourceTree = "<group>"; };
 		CF02A29C2240226900F84F47 /* getZooAreaColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getZooAreaColor.swift; sourceTree = "<group>"; };
 		CF02A29E22403CB600F84F47 /* filterObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filterObjects.swift; sourceTree = "<group>"; };
-		CF0394522244AD5400FA8C5A /* Catering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catering.swift; sourceTree = "<group>"; };
 		CF0394542244AEF500FA8C5A /* CateringData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CateringData.swift; sourceTree = "<group>"; };
-		CF0394562244B0B000FA8C5A /* Shopping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping.swift; sourceTree = "<group>"; };
 		CF0394582244B13600FA8C5A /* ShoppingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingData.swift; sourceTree = "<group>"; };
-		CF03945A2244B32000FA8C5A /* Aviary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aviary.swift; sourceTree = "<group>"; };
 		CF03945C2244B40000FA8C5A /* AviaryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviaryData.swift; sourceTree = "<group>"; };
 		CF03945E2244B66D00FA8C5A /* GeneralData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralData.swift; sourceTree = "<group>"; };
+		CF039460224542FC00FA8C5A /* Shopping Areas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Shopping Areas.plist"; sourceTree = "<group>"; };
+		CF039463224556B200FA8C5A /* DetailMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMapViewController.swift; sourceTree = "<group>"; };
 		CF4E249B2239744A006BCFA4 /* zoo_tiles */ = {isa = PBXFileReference; lastKnownFileType = folder; name = zoo_tiles; path = ../zoo_tiles; sourceTree = "<group>"; };
 		CF4E24A022398145006BCFA4 /* Tiger_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tiger_Trail.plist; sourceTree = "<group>"; };
 		CF4E24A122398145006BCFA4 /* Hippo_Trail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Hippo_Trail.plist; sourceTree = "<group>"; };
@@ -263,6 +261,14 @@
 				CF02A28B223FF8ED00F84F47 /* Front Street Café_Menu.pdf */,
 			);
 			path = Menus;
+			sourceTree = "<group>";
+		};
+		CF0394622245431E00FA8C5A /* Property Lists */ = {
+			isa = PBXGroup;
+			children = (
+				CF039460224542FC00FA8C5A /* Shopping Areas.plist */,
+			);
+			path = "Property Lists";
 			sourceTree = "<group>";
 		};
 		CF4E249D22398145006BCFA4 /* Routes */ = {
@@ -399,10 +405,7 @@
 				CFD4656D2236E68B0073E3FD /* ZooObject.swift */,
 				CFD4657E2236F5530073E3FD /* ZooArea.swift */,
 				CFD4656B2236E6760073E3FD /* Animal.swift */,
-				CF03945A2244B32000FA8C5A /* Aviary.swift */,
 				CFD4656F2236E6A80073E3FD /* Dining.swift */,
-				CF0394562244B0B000FA8C5A /* Shopping.swift */,
-				CF0394522244AD5400FA8C5A /* Catering.swift */,
 				CFD465712236E7040073E3FD /* Restroom.swift */,
 				CFD465732236E79E0073E3FD /* WaterFountain.swift */,
 				CFD465752236E8550073E3FD /* MapLocation.swift */,
@@ -417,17 +420,18 @@
 			isa = PBXGroup;
 			children = (
 				CFD4657A2236E9460073E3FD /* AnimalData.swift */,
+				CF0394582244B13600FA8C5A /* ShoppingData.swift */,
 				CF03945C2244B40000FA8C5A /* AviaryData.swift */,
 				CFD465802236F7830073E3FD /* DiningData.swift */,
 				CF0394542244AEF500FA8C5A /* CateringData.swift */,
 				CF03945E2244B66D00FA8C5A /* GeneralData.swift */,
-				CF0394582244B13600FA8C5A /* ShoppingData.swift */,
 				CFD465822236F8B60073E3FD /* RestroomData.swift */,
 				CFD465842236F9590073E3FD /* WaterFountainData.swift */,
 				CFD465862236FA410073E3FD /* MapLocationData.swift */,
 				CFD465882236FC3F0073E3FD /* ParkingLotSignData.swift */,
 				CFD4659E2238285B0073E3FD /* ExperienceData.swift */,
 				CFD465AC2238CEED0073E3FD /* Colors.swift */,
+				CF0394622245431E00FA8C5A /* Property Lists */,
 				CF02A27F223FF8ED00F84F47 /* Menus */,
 				CF4E249D22398145006BCFA4 /* Routes */,
 			);
@@ -450,6 +454,7 @@
 				CF7448C222416C1900C34E6B /* filterSearchObjects.swift */,
 				CFD4658D223703DF0073E3FD /* ObjectDetailViewController.swift */,
 				CF02A27D223FF60100F84F47 /* MenuViewController.swift */,
+				CF039463224556B200FA8C5A /* DetailMapViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -542,6 +547,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF4E24DD22398145006BCFA4 /* AlbertHippoConnection_Trail.plist in Resources */,
+				CF039461224542FC00FA8C5A /* Shopping Areas.plist in Resources */,
 				CF4E24D822398145006BCFA4 /* AfricanWaterfall_Trail.plist in Resources */,
 				CF4E24D522398145006BCFA4 /* AfricaRocks_Trail.plist in Resources */,
 				CF4E24E522398145006BCFA4 /* ParkWay_IPS.plist in Resources */,
@@ -679,16 +685,14 @@
 				CFD465A1223854B90073E3FD /* ExperienceDetailViewController.swift in Sources */,
 				CF02A29B2240082000F84F47 /* PickAreaViewController.swift in Sources */,
 				CFD4656C2236E6760073E3FD /* Animal.swift in Sources */,
-				CF03945B2244B32000FA8C5A /* Aviary.swift in Sources */,
 				CFD8977A223C22470073FE49 /* CustomTabBarController.swift in Sources */,
-				CF0394572244B0B000FA8C5A /* Shopping.swift in Sources */,
 				CFD46591223748960073E3FD /* ZooObjectTableViewCell.swift in Sources */,
 				CFD465782236E8E70073E3FD /* ParkingLotSign.swift in Sources */,
 				CFD465892236FC3F0073E3FD /* ParkingLotSignData.swift in Sources */,
 				CFD465AB2238CEBF0073E3FD /* ZooAnnotationView.swift in Sources */,
 				CFD465A32238CD5A0073E3FD /* MapViewZoomInterceptor.swift in Sources */,
 				CFD465872236FA410073E3FD /* MapLocationData.swift in Sources */,
-				CF0394532244AD5400FA8C5A /* Catering.swift in Sources */,
+				CF039464224556B200FA8C5A /* DetailMapViewController.swift in Sources */,
 				CFD4659B223826650073E3FD /* ExperienceType.swift in Sources */,
 				CF0394552244AEF500FA8C5A /* CateringData.swift in Sources */,
 				CFD465722236E7040073E3FD /* Restroom.swift in Sources */,

@@ -17,10 +17,19 @@ class SearchViewController: UIViewController {
     
     let zoo = Zoo(name: "San Diego Zoo")
     
-    var objects = [ZooObject]()
+    var objects = [ZooObject]()  {
+        didSet {
+            objects = objects.sorted { $0.name.lowercased() < $1.name.lowercased() }
+        }
+    }
     
     // search bar items
-    var searchItem = [ZooObject]()
+    var searchItem = [ZooObject]() {
+        didSet {
+            searchItem = searchItem.sorted { $0.name.lowercased() < $1.name.lowercased() }
+        }
+    }
+    
     var searching: Bool = false
     
     // picker view
@@ -118,16 +127,16 @@ class SearchViewController: UIViewController {
         
         // load named objects
         let zooObjects: [[ZooObject]] = [
-            zoo.animals,
-            zoo.aviaries,
-            zoo.restaurants,
-            zoo.cateringRestaurants,
-            zoo.shoppingAreas,
-            zoo.mapLocations,
-            zoo.parkingLotSigns,
-            zoo.restrooms,
-            zoo.waterFountains,
-            zoo.generalAreas]
+            zoo.animalDataSource,
+            zoo.aviaryDataSource,
+            zoo.diningDataSource,
+            zoo.cateringDataSource,
+            zoo.shoppingDataSource,
+            zoo.restroomDataSource,
+            zoo.waterFountainDataSource,
+            zoo.mapLocationDataSource,
+            zoo.parkingLotSignDataSource,
+            zoo.generalDataSource]
         
         zooObjects.forEach {
             objects.append(contentsOf: $0)

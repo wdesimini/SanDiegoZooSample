@@ -21,5 +21,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    lazy var animalData = AnimalData()
+    lazy var diningData = DiningData()
+    lazy var shoppingData = ShoppingData()
+    lazy var cateringData = CateringData()
+    lazy var generalData = GeneralData()
+    lazy var restroomData = RestroomData()
+    lazy var waterFountainData = WaterFountainData()
+    lazy var aviaryData = AviaryData()
+    lazy var mapLocationData = MapLocationData()
+    lazy var parkingLotSignData = ParkingLotSignData()
 }
 

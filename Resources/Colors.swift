@@ -15,6 +15,16 @@ struct MyColors {
     static let shoppingRed = hexStringToUIColor(hex: "#ea0b1e")
     static let cateringOrange = hexStringToUIColor(hex: "#f6a025")
     static let generalPurple = hexStringToUIColor(hex: "91538a")
+    
+    static let lostForestGreen = hexStringToUIColor(hex: "7db840")
+    static let discoveryOutpostRed = hexStringToUIColor(hex: "9a2c39")
+    static let outbackPurple = hexStringToUIColor(hex: "5c2f44")
+    static let urbanJungleOrange = hexStringToUIColor(hex: "c05312")
+    static let asianPassagePurple = hexStringToUIColor(hex: "58567d")
+    static let africaRocksGreen = hexStringToUIColor(hex: "828335")
+    static let elephantOdysseyBrown = hexStringToUIColor(hex: "b67e41")
+    static let pandaCanyonRed = hexStringToUIColor(hex: "96543e")
+    static let northernFrontierBlue = hexStringToUIColor(hex: "659fa0")
 }
 
 

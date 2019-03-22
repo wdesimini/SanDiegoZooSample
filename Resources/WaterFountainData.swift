@@ -11,12 +11,15 @@ import CoreLocation
 
 struct WaterFountainData {
     
-    static let waterFountains: [WaterFountain] = {
-        [WaterFountain(coordinate: CLLocationCoordinate2DMake(32.7344318, -117.1549204),
-                       areaPointer: 2),
-         WaterFountain(coordinate: CLLocationCoordinate2DMake(32.7356592, -117.1531206),
-                       areaPointer: 5)
+    lazy var waterFountains: [WaterFountain] = {
+        
+        let fountainList = [WaterFountain(coordinate: CLLocationCoordinate2DMake(32.7344318, -117.1549204),
+                                          areaPointer: 2),
+                            WaterFountain(coordinate: CLLocationCoordinate2DMake(32.7356592, -117.1531206),
+                                          areaPointer: 5)
         ]
+        
+        return fountainList
     }()
     
 }

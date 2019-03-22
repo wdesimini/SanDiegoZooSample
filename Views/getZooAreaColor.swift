@@ -15,23 +15,23 @@ extension ZooArea {
     func getAreaColor() -> UIColor {
         switch self {
         case .discoveryOutpost:
-            return .red
+            return MyColors.discoveryOutpostRed
         case .lostForest:
-            return .green
+            return MyColors.lostForestGreen
         case .northernFrontier:
-            return .blue
+            return MyColors.northernFrontierBlue
         case .pandaCanyon:
-            return .brown
+            return MyColors.pandaCanyonRed
         case .asianPassage:
-            return .purple
+            return MyColors.asianPassagePurple
         case .elephantOdyssey:
-            return .brown
+            return MyColors.elephantOdysseyBrown
         case .africaRocks:
-            return .green
+            return MyColors.africaRocksGreen
         case .urbanJungle:
-            return .orange
+            return MyColors.urbanJungleOrange
         case .outback:
-            return .purple
+            return MyColors.outbackPurple
         case .parkingLot:
             return .gray
         case .unknown:

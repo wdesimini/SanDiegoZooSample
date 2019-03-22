@@ -25,7 +25,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     var tileRenderer: MKTileOverlayRenderer!
     var zoomInterceptor: WildCardGestureRecognizer!
     
-    var currentObjects = [ZooObject]()
+    var currentObjects = [ZooObject]() {
+        didSet {
+            currentObjects = currentObjects.sorted { $0.name.lowercased() < $1.name.lowercased() }
+        }
+    }
+    
     var areaFilter: ZooArea?
     var typeFilter: ZooObjectType? {
         didSet {
@@ -189,16 +194,16 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         // object arrays
         let objectArrays: [[ZooObject]] = [
-            zoo.animals,
-            zoo.aviaries,
-            zoo.restaurants,
-            zoo.cateringRestaurants,
-            zoo.shoppingAreas,
-            zoo.restrooms,
-            zoo.waterFountains,
-            zoo.mapLocations,
-            zoo.parkingLotSigns,
-            zoo.generalAreas
+            zoo.animalDataSource,
+            zoo.aviaryDataSource,
+            zoo.diningDataSource,
+            zoo.cateringDataSource,
+            zoo.shoppingDataSource,
+            zoo.restroomDataSource,
+            zoo.waterFountainDataSource,
+            zoo.mapLocationDataSource,
+            zoo.parkingLotSignDataSource,
+            zoo.generalDataSource
         ]
         
         for array in objectArrays {
@@ -221,7 +226,33 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             // add annotation to annotations list
             let annotation = ZooAnnotation(object: $0)
             zooAnnotations.append(annotation)
+            
+            // if animal and more than one location
+            if let animalObject = $0 as? Animal,
+                animalObject.alternateLocations != nil {
+                
+                // add annotations for all coordinates
+                addMultipleLocationAnnotation(animal: animalObject)
+            }
+            
         }
+    }
+    
+    func addMultipleLocationAnnotation(animal: Animal) {
+        
+        // iterate through each alternate location and add annotation for each
+        animal.alternateLocations!.forEach {
+            
+            let alterLocationAnimal = Animal(name: animal.name,
+                                             coordinate: $0.coordinate,
+                                             imageString: animal.imageString,
+                                             areaPointer: $0.areaPointer,
+                                             conservationStatus: animal.conservationStatus,
+                                             summary: animal.summary)
+            
+            zooAnnotations.append(ZooAnnotation(object: alterLocationAnimal))
+        }
+        
     }
     
     func showAnnotationsOnMap() {

@@ -11,8 +11,9 @@ import UIKit
 
 struct AnimalData {
     
-    static let animals: [Animal] = {
-        [Animal(name: "Komodo Dragon",
+    lazy var animals: Array<Animal> = {
+        
+        let animalList = [Animal(name: "Komodo Dragon",
                 coordinate: CLLocationCoordinate2DMake(32.734035, -117.149512),
                 imageString: "komodo_image",
                 areaPointer: 0,
@@ -48,6 +49,8 @@ struct AnimalData {
                 conservationStatus: .threatened,
                 summary: "Our giraffe exhibit lets you get amazingly close to these tremendously tall creatures. A giraffe could look into a second-story window without even having to stand on its tiptoes! There is only one giraffe species, but there are several subspecies—two of which are endangered. They are distinguished by their coat patterns and by where they live in Africa. For a long time, people called the giraffe a camel-leopard, believing it was a combination of a camel and a leopard! We have Masai giraffes, native to Kenya, with patterns that look like oak leaves. Our giraffes share their space with much smaller Soemmerring’s gazelles, graceful antelope native to Africa. Feeding stations are located throughout, with low feeders containing tasty herbivore pellets lining the front of the exhibit, and much higher ones with leafy acacia branches dangling enticingly in the middle. At either location, it’s so interesting to watch a giraffe wrap its long, dark tongue around its food.")
         ]
+        
+        return animalList
     }()
     
 }

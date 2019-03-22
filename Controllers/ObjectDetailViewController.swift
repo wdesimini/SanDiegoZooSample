@@ -131,6 +131,13 @@ class ObjectDetailViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showObjectOnMapSegue" {
+            let destVC = segue.destination as! DetailMapViewController
+            destVC.object = sender as? ZooObject
+        }
+    }
+    
     func addConstraints() {
         
         NSLayoutConstraint.activate([
@@ -248,6 +255,8 @@ class ObjectDetailViewController: UIViewController {
     }
     
     @objc func viewOnMapTapped() {
+        
+        performSegue(withIdentifier: "showObjectOnMapSegue", sender: object)
         
     }
     
