@@ -119,11 +119,15 @@ class SearchViewController: UIViewController {
         // load named objects
         let zooObjects: [[ZooObject]] = [
             zoo.animals,
+            zoo.aviaries,
             zoo.restaurants,
+            zoo.cateringRestaurants,
+            zoo.shoppingAreas,
             zoo.mapLocations,
             zoo.parkingLotSigns,
             zoo.restrooms,
-            zoo.waterFountains]
+            zoo.waterFountains,
+            zoo.generalAreas]
         
         zooObjects.forEach {
             objects.append(contentsOf: $0)

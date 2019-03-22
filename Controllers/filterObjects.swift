@@ -47,7 +47,9 @@ extension MapViewController {
             return
         }
         
-        mapView.showAnnotations(mapView.annotations, animated: false)
+        let zooAnnotations = mapView.annotations.filter { !($0 is MKUserLocation) }
+        
+        mapView.showAnnotations(zooAnnotations, animated: false)
         
         // zoom out so tiles can render
         let span = MKCoordinateSpan.init(latitudeDelta: 0.007, longitudeDelta: 0.0)

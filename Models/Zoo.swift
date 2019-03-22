@@ -41,11 +41,15 @@ class Zoo: NSObject {
     
     // objects
     let animals = AnimalData.animals
+    let aviaries = AviaryData.aviaries
     let restaurants = DiningData.restaurants
+    let shoppingAreas = ShoppingData.shoppingAreas
+    let cateringRestaurants = CateringData.cateringRestaurants
     let restrooms = RestroomData.restrooms
     let waterFountains = WaterFountainData.waterFountains
     let mapLocations = MapLocationData.mapLocations
     let parkingLotSigns = ParkingLotSignData.signs
+    let generalAreas = GeneralData.generalAreas
     
     // experiences
     let specialExperiencesArray = ZooExperiences.specialExperiences

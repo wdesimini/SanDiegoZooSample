@@ -72,7 +72,6 @@ class PickAreaViewController: UIViewController {
             filterButton.widthAnchor.constraint(equalTo: view.widthAnchor),
             filterButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
-//            picker.topAnchor.constraint(equalTo: view.topAnchor, constant: height),
             picker.topAnchor.constraint(equalTo: filterButton.bottomAnchor),
             picker.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             picker.leftAnchor.constraint(equalTo: view.leftAnchor),

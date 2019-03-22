@@ -1,0 +1,16 @@
+PODS:
+  - DropDown (2.3.12)
+
+DEPENDENCIES:
+  - DropDown
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DropDown
+
+SPEC CHECKSUMS:
+  DropDown: 0bcc278799ec11a3d34ce1aac9367fbbaf5423d9
+
+PODFILE CHECKSUM: 62037e7899727519123573e75b48473c9441fc71
+
+COCOAPODS: 1.5.3

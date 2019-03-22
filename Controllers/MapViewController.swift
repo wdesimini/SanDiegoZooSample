@@ -190,11 +190,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         // object arrays
         let objectArrays: [[ZooObject]] = [
             zoo.animals,
+            zoo.aviaries,
             zoo.restaurants,
+            zoo.cateringRestaurants,
+            zoo.shoppingAreas,
             zoo.restrooms,
             zoo.waterFountains,
             zoo.mapLocations,
-            zoo.parkingLotSigns
+            zoo.parkingLotSigns,
+            zoo.generalAreas
         ]
         
         for array in objectArrays {
