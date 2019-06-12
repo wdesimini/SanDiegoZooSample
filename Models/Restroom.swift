@@ -15,16 +15,16 @@ class Restroom: ZooObject {
     init(coordinate: CLLocationCoordinate2D, areaPointer: Int, restroomType: RestroomType) {
         self.restroomType = restroomType
         
-        super.init(name: "Restroom", coordinate: coordinate, areaPointer: areaPointer, type: .restroom)
+        super.init(
+            name: "Restroom",
+            coordinate: coordinate,
+            areaPointer: areaPointer,
+            type: .restroom
+        )
         
-        let restroomName = area.getAreaName() + " Restroom"
-        self.name = restroomName
-        
-        let restroomSummary = "Restrooms are conveniently located all around the San Diego Zoo.\n\nFamily Restrooms are located at Sabertooth Grill, Sydney's Grill, Hua Mei Café, as well as near to Skyfari East"
-        self.summary = restroomSummary
+        self.name = area.getAreaName() + " Restroom"
+        self.summary =
+            "Restrooms are conveniently located all around the San Diego Zoo."
+            + "\n\nFamily Restrooms are located at Sabertooth Grill, Sydney's Grill, Hua Mei Café, as well as near to Skyfari East"
     }
-}
-
-enum RestroomType {
-    case regular, family
 }

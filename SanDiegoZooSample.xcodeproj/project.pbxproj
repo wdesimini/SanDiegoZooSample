@@ -111,6 +111,12 @@
 		CFD465AF2238D05E0073E3FD /* ZooAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD465AE2238D05E0073E3FD /* ZooAnnotation.swift */; };
 		CFD8977A223C22470073FE49 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD89779223C22470073FE49 /* CustomTabBarController.swift */; };
 		CFD8977C223C75570073FE49 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8977B223C75570073FE49 /* Extensions.swift */; };
+		CFDE507D22B164F800817D14 /* ZooPerimeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDE507C22B164F800817D14 /* ZooPerimeter.swift */; };
+		CFDE507F22B1653D00817D14 /* Zoo+Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDE507E22B1653D00817D14 /* Zoo+Service.swift */; };
+		CFDE508122B166BC00817D14 /* ZooObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDE508022B166BC00817D14 /* ZooObjectType.swift */; };
+		CFDE508322B168EF00817D14 /* ConservationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDE508222B168EF00817D14 /* ConservationStatus.swift */; };
+		CFDE508722B16B7A00817D14 /* RestroomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDE508622B16B7A00817D14 /* RestroomType.swift */; };
+		CFDE508922B16BCA00817D14 /* ParkingLotRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDE508822B16BCA00817D14 /* ParkingLotRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -222,6 +228,12 @@
 		CFD465AE2238D05E0073E3FD /* ZooAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooAnnotation.swift; sourceTree = "<group>"; };
 		CFD89779223C22470073FE49 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		CFD8977B223C75570073FE49 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CFDE507C22B164F800817D14 /* ZooPerimeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooPerimeter.swift; sourceTree = "<group>"; };
+		CFDE507E22B1653D00817D14 /* Zoo+Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Zoo+Service.swift"; sourceTree = "<group>"; };
+		CFDE508022B166BC00817D14 /* ZooObjectType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooObjectType.swift; sourceTree = "<group>"; };
+		CFDE508222B168EF00817D14 /* ConservationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConservationStatus.swift; sourceTree = "<group>"; };
+		CFDE508622B16B7A00817D14 /* RestroomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomType.swift; sourceTree = "<group>"; };
+		CFDE508822B16BCA00817D14 /* ParkingLotRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -402,14 +414,20 @@
 			isa = PBXGroup;
 			children = (
 				CFD465692236E4D10073E3FD /* Zoo.swift */,
+				CFDE507E22B1653D00817D14 /* Zoo+Service.swift */,
+				CFDE507C22B164F800817D14 /* ZooPerimeter.swift */,
 				CFD4656D2236E68B0073E3FD /* ZooObject.swift */,
+				CFDE508022B166BC00817D14 /* ZooObjectType.swift */,
 				CFD4657E2236F5530073E3FD /* ZooArea.swift */,
 				CFD4656B2236E6760073E3FD /* Animal.swift */,
+				CFDE508222B168EF00817D14 /* ConservationStatus.swift */,
 				CFD4656F2236E6A80073E3FD /* Dining.swift */,
 				CFD465712236E7040073E3FD /* Restroom.swift */,
+				CFDE508622B16B7A00817D14 /* RestroomType.swift */,
 				CFD465732236E79E0073E3FD /* WaterFountain.swift */,
 				CFD465752236E8550073E3FD /* MapLocation.swift */,
 				CFD465772236E8E70073E3FD /* ParkingLotSign.swift */,
+				CFDE508822B16BCA00817D14 /* ParkingLotRow.swift */,
 				CFD46598223826140073E3FD /* Experience.swift */,
 				CFD4659A223826650073E3FD /* ExperienceType.swift */,
 			);
@@ -657,6 +675,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF0394592244B13600FA8C5A /* ShoppingData.swift in Sources */,
+				CFDE508922B16BCA00817D14 /* ParkingLotRow.swift in Sources */,
 				CFD465812236F7830073E3FD /* DiningData.swift in Sources */,
 				CFD46597223825A20073E3FD /* ExperiencesViewController.swift in Sources */,
 				CFD465AD2238CEED0073E3FD /* Colors.swift in Sources */,
@@ -669,6 +688,7 @@
 				CFD465A92238CE630073E3FD /* ConstantSizePolyline.swift in Sources */,
 				CFD465832236F8B60073E3FD /* RestroomData.swift in Sources */,
 				CF03945F2244B66D00FA8C5A /* GeneralData.swift in Sources */,
+				CFDE508722B16B7A00817D14 /* RestroomType.swift in Sources */,
 				CF02A299224007C400F84F47 /* ZooAreaPickerView.swift in Sources */,
 				CFD4658E223703DF0073E3FD /* ObjectDetailViewController.swift in Sources */,
 				CFD465702236E6A80073E3FD /* Dining.swift in Sources */,
@@ -676,12 +696,15 @@
 				CFD465AF2238D05E0073E3FD /* ZooAnnotation.swift in Sources */,
 				CF03945D2244B40000FA8C5A /* AviaryData.swift in Sources */,
 				CFD4657F2236F5530073E3FD /* ZooArea.swift in Sources */,
+				CFDE507F22B1653D00817D14 /* Zoo+Service.swift in Sources */,
 				CF02A29D2240226900F84F47 /* getZooAreaColor.swift in Sources */,
 				CFD4659522381F9B0073E3FD /* HomeViewController.swift in Sources */,
 				CFD4657B2236E9460073E3FD /* AnimalData.swift in Sources */,
 				CFD465592236E4AC0073E3FD /* SearchViewController.swift in Sources */,
 				CF4E24EF223982E6006BCFA4 /* Routes.swift in Sources */,
+				CFDE508122B166BC00817D14 /* ZooObjectType.swift in Sources */,
 				CFD4659F2238285B0073E3FD /* ExperienceData.swift in Sources */,
+				CFDE507D22B164F800817D14 /* ZooPerimeter.swift in Sources */,
 				CFD465A1223854B90073E3FD /* ExperienceDetailViewController.swift in Sources */,
 				CF02A29B2240082000F84F47 /* PickAreaViewController.swift in Sources */,
 				CFD4656C2236E6760073E3FD /* Animal.swift in Sources */,
@@ -689,6 +712,7 @@
 				CFD46591223748960073E3FD /* ZooObjectTableViewCell.swift in Sources */,
 				CFD465782236E8E70073E3FD /* ParkingLotSign.swift in Sources */,
 				CFD465892236FC3F0073E3FD /* ParkingLotSignData.swift in Sources */,
+				CFDE508322B168EF00817D14 /* ConservationStatus.swift in Sources */,
 				CFD465AB2238CEBF0073E3FD /* ZooAnnotationView.swift in Sources */,
 				CFD465A32238CD5A0073E3FD /* MapViewZoomInterceptor.swift in Sources */,
 				CFD465872236FA410073E3FD /* MapLocationData.swift in Sources */,

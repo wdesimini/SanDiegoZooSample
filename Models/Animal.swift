@@ -7,38 +7,35 @@
 //
 
 import CoreLocation
-import UIKit
+
 
 class Animal: ZooObject {
     
     var conservationStatus: ConservationStatus
     var alternateLocations: [Location]?
     
-    init(name: String, coordinate: CLLocationCoordinate2D, imageString: String? = nil, areaPointer: Int, conservationStatus: ConservationStatus, summary: String? = "No Summary Found", alternateLocations: [Location]? = nil) {
+    init(
+        name: String,
+        coordinate: CLLocationCoordinate2D,
+        imageString: String? = nil,
+        areaPointer: Int,
+        conservationStatus: ConservationStatus,
+        summary: String? = "No Summary Found",
+        alternateLocations: [Location]? = nil
+        ) {
         
         self.conservationStatus = conservationStatus
         
-        super.init(name: name, coordinate: coordinate, imageString: imageString, areaPointer: areaPointer, type: .animal, summary: summary)
+        super.init(
+            name: name,
+            coordinate: coordinate,
+            imageString: imageString,
+            areaPointer: areaPointer,
+            type: .animal,
+            summary: summary
+        )
         
         self.alternateLocations = alternateLocations
-    }
-}
-
-enum ConservationStatus {
-    case endangered, threatened, stable
-}
-
-extension ConservationStatus {
-    
-    func getString() -> String {
-        switch self {
-        case .endangered:
-            return "Endangered"
-        case .stable:
-            return "Stable"
-        case .threatened:
-            return "Threatened"
-        }
     }
 }
 

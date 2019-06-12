@@ -8,6 +8,7 @@
 
 import CoreLocation
 
+
 class MapLocationSign: ZooObject {
     
     var number: Int
@@ -15,7 +16,11 @@ class MapLocationSign: ZooObject {
     init(coordinate: CLLocationCoordinate2D, areaPointer: Int, number: Int) {
         self.number = number
         
-        let mapLocationName = "Map Location " + String(number)
-        super.init(name: mapLocationName, coordinate: coordinate, areaPointer: areaPointer, type: .mapLocation)
+        super.init(
+            name: "Map Location " + String(number),
+            coordinate: coordinate,
+            areaPointer: areaPointer,
+            type: .mapLocation
+        )
     }
 }

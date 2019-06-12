@@ -13,11 +13,14 @@ private let waterFountainSummary = "Water Fountain locations can be found spread
 class WaterFountain: ZooObject {
     
     init(coordinate: CLLocationCoordinate2D, areaPointer: Int) {
-        super.init(name: "Water Fountain", coordinate: coordinate, areaPointer: areaPointer, type: .waterFountain)
+        super.init(
+            name: "Water Fountain",
+            coordinate: coordinate,
+            areaPointer: areaPointer,
+            type: .waterFountain
+        )
         
-        let fountainName = area.getAreaName() + " Water Fountain"
-        self.name = fountainName
-        
+        self.name = area.getAreaName() + " Water Fountain"
         self.summary = waterFountainSummary
     }
     

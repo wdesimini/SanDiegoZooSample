@@ -17,7 +17,17 @@ class Experience {
     let ticketsURL: String?
     var location: String?
     
-    init(imageString: String? = "zoo_logo", title: String, description: String, times: String? = nil, duration: String? = nil, ageInterest: String? = nil, price: String? = nil, ticketsURL: String? = nil, location: String? = nil) {
+    init(
+        imageString: String? = "zoo_logo",
+        title: String,
+        description: String,
+        times: String? = nil,
+        duration: String? = nil,
+        ageInterest: String? = nil,
+        price: String? = nil,
+        ticketsURL: String? = nil,
+        location: String? = nil
+        ) {
         
         self.title = title
         self.description = description
@@ -31,6 +41,6 @@ class Experience {
     }
     
     var type: ExperienceType {
-        get { return .unknown }
+        return .unknown
     }
 }
