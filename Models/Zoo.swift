@@ -40,6 +40,19 @@ class Zoo: NSObject {
     lazy var mapLocationDataSource = mapLocationData.mapLocations
     lazy var parkingLotSignDataSource = parkingLotSignData.signs
     
+    lazy var allObjectArrays: [[ZooObject]] = [
+        animalDataSource,
+        aviaryDataSource,
+        diningDataSource,
+        cateringDataSource,
+        shoppingDataSource,
+        restroomDataSource,
+        waterFountainDataSource,
+        mapLocationDataSource,
+        parkingLotSignDataSource,
+        generalDataSource
+    ]
+    
     // experiences
     let specialExperiencesArray = ZooExperiences.specialExperiences
     let zooEducationArray = ZooExperiences.zooEducations

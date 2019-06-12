@@ -32,3 +32,9 @@ class ZooObject: NSObject {
         return ZooArea(rawValue: areaPointer)
     }
 }
+
+extension ZooObject: Comparable {
+    static func < (lhs: ZooObject, rhs: ZooObject) -> Bool {
+        return lhs.name.lowercased() < rhs.name.lowercased()
+    }
+}

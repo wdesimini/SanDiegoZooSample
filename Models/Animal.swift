@@ -39,6 +39,29 @@ class Animal: ZooObject {
     }
 }
 
+extension Animal {
+    
+    var allLocationAnnotations: [ZooAnnotation]? {
+        return atAllLocations?.map { ZooAnnotation(object: $0) }
+    }
+    
+    private var atAllLocations: [Animal]? {
+        guard alternateLocations != nil else { return nil }
+        
+        return alternateLocations!.map {
+            return Animal(
+                name: name,
+                coordinate: $0.coordinate,
+                imageString: imageString,
+                areaPointer: areaPointer,
+                conservationStatus: conservationStatus,
+                summary: summary
+            )
+        }
+    }
+    
+}
+
 struct Location {
     
     var coordinate: CLLocationCoordinate2D

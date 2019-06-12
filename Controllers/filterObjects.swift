@@ -42,19 +42,17 @@ extension MapViewController {
         
         guard area != .unknown else {
             // .unknown removes filter, just use all
-            setInitialRegion()
-            
+            mapView.region = initialMapRegion
             return
         }
         
-        let zooAnnotations = mapView.annotations.filter { !($0 is MKUserLocation) }
-        
-        mapView.showAnnotations(zooAnnotations, animated: false)
+        mapView.showAnnotations(
+            mapView.annotations.filter { $0 is ZooAnnotation },
+            animated: false
+        )
         
         // zoom out so tiles can render
-        let span = MKCoordinateSpan.init(latitudeDelta: 0.007, longitudeDelta: 0.0)
-        let region = MKCoordinateRegion.init(center: mapView.centerCoordinate, span: span)
-        mapView.setRegion(region, animated: true)
+        mapView.setRegion(defaultRegion, animated: true)
     }
     
     func setAreaFilterButtonAppearance(area: ZooArea) {
@@ -73,47 +71,5 @@ extension MapViewController {
         areaFilterButton.setTitle(title, for: .normal)
         areaFilterButton.setTitleColor(titleColor, for: .normal)
         areaFilterButton.backgroundColor = area.getAreaColor()
-    }
-    
-    // selected type filtering
-    
-    @objc func typeFilterButtonTapped() {
-        typeDropDown.show()
-    }
-    
-    func setTypeDropDown() {
-        // add button as titleView
-        navigationItem.titleView = typeFilterButton
-        typeFilterButton.addTarget(self, action: #selector(typeFilterButtonTapped), for: .touchUpInside)
-        
-        typeDropDown.anchorView = navigationController?.navigationBar
-        typeDropDown.cellHeight = 50
-        typeDropDown.direction = .bottom
-        typeDropDown.bottomOffset = CGPoint(x: 0, y: typeDropDown.anchorView!.plainView.bounds.height)
-        typeDropDown.backgroundColor = .white
-        typeDropDown.selectionBackgroundColor = .lightGray
-        typeDropDown.textColor = .black
-        typeDropDown.cornerRadius = 10
-        
-        typeDropDown.dataSource = [
-            "Animals",
-            "Dining",
-            "Shopping",
-            "Catering",
-            "Aviaries",
-            "Map Locations",
-            "Parking Lot Signs",
-            "General",
-            "Water Fountains",
-            "Restrooms",
-            "No Filter"
-        ]
-        
-        typeDropDown.selectionAction = { [unowned self] (index: Int, item: String) in
-            self.typeFilter = ZooObjectType(rawValue: index)
-            self.typeFilterButton.setTitle(item, for: .normal)
-            self.typeDropDown.hide()
-        }
-        
     }
 }

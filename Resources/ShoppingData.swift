@@ -12,29 +12,22 @@ import CoreLocation
 
 class ShoppingData {
     lazy var shoppingAreas: Array<ZooObject> = {
-        var shoppingList: [ZooObject] = []
         let items = Zoo.plist("Shopping Areas") as! [[String: AnyObject]]
-        
-        for item in items {
-            
-            let name = item["name"] as! String
-            let coordinate = Zoo.parseCoord(dict: item, fieldName: "coordinate")
-            let imageString = item["imageString"] as? String
-            let pointer = item["area"] as! Int
-            let summary = item["summary"] as? String
-            
-            var object: ZooObject
-            
-            object = ZooObject(name: name,
-                               coordinate: coordinate,
-                               imageString: imageString,
-                               areaPointer: pointer,
-                               type: .shopping,
-                               summary: summary)
-            
-            shoppingList.append(object)
-        }
-        
-        return shoppingList
+        return items.map { getShoppingObject(from: $0) }
     }()
+}
+
+extension ShoppingData {
+    
+    func getShoppingObject(from item: [String: AnyObject]) -> ZooObject {
+        return ZooObject(
+            name: item["name"] as! String,
+            coordinate: Zoo.parseCoord(dict: item, fieldName: "coordinate"),
+            imageString: item["imageString"] as? String,
+            areaPointer: item["area"] as! Int,
+            type: .shopping,
+            summary: item["summary"] as? String
+        )
+    }
+    
 }

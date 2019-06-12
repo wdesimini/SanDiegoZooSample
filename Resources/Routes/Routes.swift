@@ -6,6 +6,9 @@
 //  Copyright © 2019 Wilson Desimini. All rights reserved.
 //
 
+import MapKit
+
+
 struct Routes {
     
     static let trails: [String] = [
@@ -103,4 +106,49 @@ struct Routes {
         "ZooDrive_Road",
         "ZooPlace_Road"
     ]
+    
+    static let allPolylines: [MKPolyline] =
+        inParkStreetPolylines
+            + trailPolylines
+            + transportPathPolylines
+            + roadPolylines
+            + parkingLotGrid
+    
+    static let inParkStreetPolylines = Routes.inParkStreets.map { fetchRoute(from: $0, lineType: .ips) }
+    static let trailPolylines = Routes.trails.map { fetchRoute(from: $0, lineType: .trail) }
+    static let transportPathPolylines = Routes.transportPaths.map { fetchRoute(from: $0, lineType: .transport) }
+    static let roadPolylines = Routes.roads.map { fetchRoute(from: $0, lineType: .road) }
+    
+    static func fetchRoute(from name: String, lineType: ZooLineType) -> MKPolyline {
+        let points = Zoo.plist(name) as! [String]
+        let cgPoints = points.map { NSCoder.cgPoint(for: $0) }
+        let coords = cgPoints.map { $0.coordinate }
+        let myPolyline = ZooPolyline(coordinates: coords, count: coords.count)
+        myPolyline.title = name
+        myPolyline.lineType = lineType
+        return myPolyline
+    }
+    
+    static let parkingLotGrid: [MKPolyline] = {
+        let gridFile = Zoo.plist("ParkingLotGrid") as! [String : Any]
+        let column1dict: [String: Any] = gridFile["Column 1"] as! [String : Any]
+        let column2dict: [String: Any] = gridFile["Column 2"] as! [String : Any]
+        let dictArray: [[String: Any]] = [column1dict, column2dict]
+        
+        func getGridline(_ dict: [String : Any]) -> [MKPolyline] {
+            return dict.map {
+                let linePoints = $0.value as! [String]
+                let cgPoints = linePoints.map { NSCoder.cgPoint(for: $0) }
+                let coords = cgPoints.map { $0.coordinate }
+                let myGridline = ZooPolyline(coordinates: coords, count: coords.count)
+                myGridline.title = $0.key
+                myGridline.lineType = .parkingLotRow
+                return myGridline
+            }
+        }
+        
+        return dictArray.flatMap { getGridline($0) }
+    }()
+    
+    
 }
