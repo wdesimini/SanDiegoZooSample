@@ -21,6 +21,7 @@ extension MapViewController {
         if (typeFilter != nil && typeFilter != .unknown) {
             let filteredObjects = currentObjects.filter { $0.type == typeFilter }
             currentObjects = filteredObjects
+            
         }
     }
     

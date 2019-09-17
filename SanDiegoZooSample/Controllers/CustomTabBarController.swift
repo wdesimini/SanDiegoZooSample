@@ -13,6 +13,7 @@ class CustomTabBarController: UITabBarController {
     
     private let mapButton: UIButton = {
         let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Map", for: .normal)
         button.setTitleColor(MyColors.darkGreen, for: .normal)
         button.addTarget(self, action: #selector(mapButtonTapped), for: .touchUpInside)
@@ -20,9 +21,17 @@ class CustomTabBarController: UITabBarController {
     }()
     
     private func configureMapButton() {
-        mapButton.frame = mapButtonFrame
         mapButton.setImage(buttonImage, for: .normal)
         view.addSubview(mapButton)
+        
+        let mapButtonW = tabBar.frame.width / CGFloat(tabBarItemCount)
+        
+        NSLayoutConstraint.activate([
+            mapButton.topAnchor.constraint(equalTo: tabBar.topAnchor),
+            mapButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            mapButton.widthAnchor.constraint(equalToConstant: mapButtonW),
+            mapButton.centerXAnchor.constraint(equalTo: tabBar.centerXAnchor),
+            ])
     }
     
     override func loadView() {
@@ -54,26 +63,5 @@ extension CustomTabBarController {
     private var tabBarItemSpacing: CGFloat {
         let itemWidth = tabBar.frame.width / CGFloat(tabBarItemCount)
         return itemWidth * 2
-    }
-    
-    private var mapButtonSize: CGSize {
-        return CGSize(
-            width: tabBar.frame.width / CGFloat(tabBarItemCount),
-            height: tabBar.frame.height
-        )
-    }
-    
-    private var mapButtonOrigin: CGPoint {
-        return CGPoint(
-            x: view.bounds.width / 2 - mapButtonSize.width / 2,
-            y: view.bounds.height - mapButtonSize.height - view.safeAreaInsets.bottom
-        )
-    }
-    
-    private var mapButtonFrame: CGRect {
-        return CGRect(
-            origin: mapButtonOrigin,
-            size: mapButtonSize
-        )
     }
 }

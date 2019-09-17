@@ -8,7 +8,6 @@
 
 import CoreLocation
 
-
 class ZooObject: NSObject {
     
     var name: String

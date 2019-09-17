@@ -44,32 +44,24 @@ class ObjectDetailViewController: UIViewController {
     }()
     
     // view on map button
-    let viewOnMapButton: UIButton = {
-        let button = UIButton(type:.system)
-        button.backgroundColor = MyColors.darkGreen
-        button.setTitle("view on map", for: .normal)
-        button.addTarget(self, action: #selector(viewOnMapTapped), for: .touchUpInside)
-        button.tintColor = .white
-        button.layer.cornerRadius = 5
-        button.clipsToBounds = true
-        button.translatesAutoresizingMaskIntoConstraints = false
-        
-        return button
-    }()
+    lazy var viewOnMapButton: UIButton = createButton("view on map", selector: #selector(viewOnMapTapped))
     
     // view menu button
-    let viewMenuButton: UIButton = {
+    lazy var viewMenuButton: UIButton = createButton("view menu", selector: #selector(viewMenuTapped))
+    
+    func createButton(_ title: String, selector: Selector) -> UIButton {
         let button = UIButton(type:.system)
         button.backgroundColor = MyColors.diningGreen
-        button.setTitle("view menu", for: .normal)
-        button.addTarget(self, action: #selector(viewMenuTapped), for: .touchUpInside)
+        button.setTitle(title, for: .normal)
+        button.addTarget(self, action: selector, for: .touchUpInside)
         button.tintColor = .white
         button.layer.cornerRadius = 5
         button.clipsToBounds = true
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
         
         return button
-    }()
+    }
     
     let buttonsStackView: UIStackView = {
         let stackView = UIStackView()
@@ -87,7 +79,7 @@ class ObjectDetailViewController: UIViewController {
         let label = UILabel()
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.preferredFont(forTextStyle: .title1)
+        label.font = UIFont.systemFont(ofSize: 17, weight: .medium)
         label.adjustsFontForContentSizeCategory = true
         
         return label
@@ -98,6 +90,8 @@ class ObjectDetailViewController: UIViewController {
         let label = UILabel()
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 17, weight: .regular)
+        label.textColor = UIColor.darkText
         label.sizeToFit()
         
         return label

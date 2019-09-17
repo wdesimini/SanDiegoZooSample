@@ -19,14 +19,14 @@ class SearchViewController: UIViewController {
     
     var objects = [ZooObject]()  {
         didSet {
-            objects = objects.sorted { $0.name.lowercased() < $1.name.lowercased() }
+            objects = objects.sorted()
         }
     }
     
     // search bar items
     var searchItem = [ZooObject]() {
         didSet {
-            searchItem = searchItem.sorted { $0.name.lowercased() < $1.name.lowercased() }
+            searchItem = searchItem.sorted()
         }
     }
     

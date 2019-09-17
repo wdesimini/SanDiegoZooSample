@@ -23,6 +23,7 @@ class ZooObjectTableViewCell: UITableViewCell {
     let objTitleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 17, weight: .medium)
         
         return label
     }()
@@ -30,7 +31,8 @@ class ZooObjectTableViewCell: UITableViewCell {
     let objSubtitleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: UIFont.smallSystemFontSize)
+        label.font = UIFont.systemFont(ofSize: 15)
+        label.textColor = .gray
         
         return label
     }()
@@ -43,7 +45,7 @@ class ZooObjectTableViewCell: UITableViewCell {
         // add stackView for labels
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.distribution = .fillProportionally
+        stackView.spacing = 0
         stackView.axis = .vertical
         stackView.addArrangedSubview(objTitleLabel)
         stackView.addArrangedSubview(objSubtitleLabel)
@@ -53,12 +55,12 @@ class ZooObjectTableViewCell: UITableViewCell {
         // set constraints
         NSLayoutConstraint.activate([
             objImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            objImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 20),
+            objImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 16),
             objImageView.heightAnchor.constraint(equalTo: contentView.heightAnchor, constant: -10),
             objImageView.widthAnchor.constraint(equalTo: objImageView.heightAnchor),
             
             stackView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            stackView.leftAnchor.constraint(equalTo: objImageView.rightAnchor, constant: 20),
+            stackView.leftAnchor.constraint(equalTo: objImageView.rightAnchor, constant: 16),
             stackView.rightAnchor.constraint(equalTo: contentView.rightAnchor),
             stackView.heightAnchor.constraint(equalTo: objImageView.heightAnchor)
             ])
@@ -67,16 +69,11 @@ class ZooObjectTableViewCell: UITableViewCell {
         objTitleLabel.text = object.name
         objSubtitleLabel.text = object.area.getAreaName()
         
-        // set image
+        // set image's frame for circlemasking
         let cellHeight = contentView.frame.height - 10
         objImageView.frame.size = CGSize(width: cellHeight, height: cellHeight)
         objImageView.circleMask()
         
-        guard let imageString = object.imageString, let image = UIImage(named: imageString) else {
-            objImageView.image = defaultImage
-            return
-        }
-        
-        objImageView.image = image
+        objImageView.image = object.image
     }
 }

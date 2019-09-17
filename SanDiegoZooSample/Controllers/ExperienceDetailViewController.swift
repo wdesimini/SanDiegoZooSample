@@ -39,8 +39,8 @@ class ExperienceDetailViewController: UIViewController {
         let label = UILabel()
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.preferredFont(forTextStyle: .title1)
-        label.adjustsFontForContentSizeCategory = true
+        label.font = UIFont.systemFont(ofSize: 34, weight: .bold)
+        label.adjustsFontSizeToFitWidth = true
         
         return label
     }()
@@ -48,12 +48,13 @@ class ExperienceDetailViewController: UIViewController {
     // tickets button
     let ticketsButton: UIButton = {
         let button = UIButton(type:.system)
+        button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .blue
         button.setTitle("tickets", for: .normal)
-        button.tintColor = .white
+        button.setTitleColor(.white, for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
         button.layer.cornerRadius = 5
         button.clipsToBounds = true
-        button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
     }()
@@ -63,6 +64,8 @@ class ExperienceDetailViewController: UIViewController {
         let label = UILabel()
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 17)
+        label.textColor = .darkText
         label.sizeToFit()
         
         return label
@@ -103,37 +106,43 @@ class ExperienceDetailViewController: UIViewController {
     }
     
     func addConstraints() {
+        let navBarHeight = navigationController!.navigationBar.bounds.height
         
         NSLayoutConstraint.activate([
             // experience image
-            experienceImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 80),
-            experienceImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 60),
-            experienceImageView.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -60),
-            experienceImageView.heightAnchor.constraint(equalToConstant: 120 ),
+            experienceImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: navBarHeight),
+            experienceImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 0),
+            experienceImageView.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: 0),
+            experienceImageView.heightAnchor.constraint(equalToConstant: 180),
             
             // title
-            titleLabel.widthAnchor.constraint(equalTo: contentView.widthAnchor, constant: -40),
+            titleLabel.widthAnchor.constraint(equalTo: contentView.widthAnchor, constant: -Size.padding * 2),
             titleLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             titleLabel.heightAnchor.constraint(equalToConstant: 80),
-            titleLabel.topAnchor.constraint(equalTo: experienceImageView.bottomAnchor, constant: 20),
+            titleLabel.topAnchor.constraint(equalTo: experienceImageView.bottomAnchor, constant: Size.padding),
             
             // tickets
-            ticketsButton.widthAnchor.constraint(equalToConstant: 80),
             ticketsButton.heightAnchor.constraint(equalToConstant: 40),
-            ticketsButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
+            ticketsButton.widthAnchor.constraint(equalTo: ticketsButton.heightAnchor, multiplier: 3),
+            ticketsButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: Size.padding),
             ticketsButton.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             
             // description
-            descriptionLabel.topAnchor.constraint(equalTo: ticketsButton.bottomAnchor, constant: 40),
-            descriptionLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 20),
-            descriptionLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -20),
-            descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20)
+            descriptionLabel.topAnchor.constraint(equalTo: ticketsButton.bottomAnchor, constant: Size.padding
+                * 2),
+            descriptionLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: Size.padding),
+            descriptionLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -Size.padding),
+            descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -Size.padding)
             ])
         
         if experience.ticketsURL == nil {
             ticketsButton.removeFromSuperview()
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 40).isActive = true
         }
+    }
+    
+    private struct Size {
+        static let padding: CGFloat = 16
     }
     
     func setViews() {

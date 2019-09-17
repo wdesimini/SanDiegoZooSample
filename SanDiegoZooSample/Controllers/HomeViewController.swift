@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
                      ticketsView]
         
         views.forEach {
-            $0?.layer.cornerRadius = 10
+            $0?.layer.cornerRadius = 12
             $0?.clipsToBounds = true
         }
     }
